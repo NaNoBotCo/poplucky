@@ -39,7 +39,9 @@ Locale = **language × market**, not just translated UI. A Thai reader sees Thai
 
 ## 5. Phases (narrow now, easy to widen)
 
-**Phase 0 — the catalog spine.** Data model + 3–4 flagship IPs fully faceted (Labubu/The Monsters, Molly, Skullpanda, Crybaby). Static site, directory-genre nav (`Series (12)` counts, hierarchy visible in place), share card per figure. This alone out-depths everything extant.
+**Phase 0 — the catalog spine. ✅ BUILT 2026-07-27.** 4 characters · 7 series · 64 figures · 77 pages · 75 open questions. Vault-canonical (`vault/`, Obsidian-editable) → `build.py` → `docs/`. Directory-genre nav with counts, EN/TH/ZH toggle, per-field provenance table on every page, share card per page, `/iso/` gap list. Verified in browser in all three languages. See README for what is and isn't verified.
+
+*Built on stdlib Python → static HTML, not Astro+Tailwind as specified below — matching mot-dang/wichaa/defiant. One less toolchain; the vault-canonical pattern is unchanged.*
 
 **Phase 1 — My Shelf.** Collection tracker: localStorage-first, zero accounts. Mark owned/wished/dupe per variant. The delight: marking a figure owned plays a box-opening reveal animation. Dupes auto-compose a **trade card** — a beautiful shareable ISO/FT image ("have these / seeking these", bilingual) for the FB groups and Discords where trading already happens. We host no marketplace; we make the flyer.
 
