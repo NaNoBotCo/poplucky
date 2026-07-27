@@ -265,6 +265,61 @@ html[lang=zh] [data-i18n=zh]{display:inline}
   border:1px solid var(--line);box-shadow:var(--shadow);display:block}
 .said{color:var(--mint);font-size:.9rem;margin-left:4px;align-self:center}
 .hidden{display:none !important}
+
+/* --- the box ------------------------------------------------------------ */
+.box{display:block;width:100%;height:auto;overflow:visible}
+.box-lid{transition:transform .42s cubic-bezier(.34,1.6,.5,1)}
+.card:hover .box-lid{transform:translateY(-7px) rotate(-4deg)}
+.shelf-item.owned .box-lid{transform:translateY(-19px) rotate(-13deg)}
+.shelf-item.owned .box-body{filter:saturate(1.12)}
+.boxwrap{position:relative;margin:-4px 0 9px}
+.card .boxwrap{max-width:118px}
+/* an opened box gets a glow where the lid was */
+.shelf-item.owned .boxwrap::after{content:"";position:absolute;left:22%;
+  right:22%;top:34%;height:16px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(255,233,168,.85),transparent 70%);
+  pointer-events:none}
+@media (prefers-reduced-motion:reduce){.box-lid{transition:none}}
+/* figure page hero */
+.herobox{display:flex;align-items:flex-end;gap:22px;flex-wrap:wrap;margin:6px 0 4px}
+.herobox .boxwrap{width:148px;max-width:38vw;margin:0}
+.herobox .heroname{flex:1;min-width:210px}
+.herobox h1{margin:0 0 .1em}
+/* --- odds as a wall of boxes -------------------------------------------- */
+.oddswall{margin:14px 0 4px;padding:0}
+.oddswall .wall{display:grid;grid-template-columns:repeat(var(--cols),1fr);
+  gap:3px;max-width:560px}
+.oddswall .cell{aspect-ratio:3/4;border-radius:2px;background:var(--line);
+  opacity:.62}
+.oddswall .cell.lit{background:linear-gradient(150deg,var(--gold),var(--pink));
+  opacity:1;box-shadow:0 0 0 2px rgba(255,111,165,.30),0 0 13px rgba(247,179,43,.65);
+  animation:litpulse 2.9s ease-in-out infinite}
+@keyframes litpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.32)}}
+@media (prefers-reduced-motion:reduce){.oddswall .cell.lit{animation:none}}
+.oddscap{color:var(--dim);font-size:.88rem;margin:7px 0 0}
+/* --- share row ---------------------------------------------------------- */
+.share{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:26px 0 0}
+.share .lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--dim);margin-right:2px}
+.share a,.share button{font:inherit;font-size:.88rem;font-weight:650;
+  cursor:pointer;text-decoration:none;border:1px solid var(--line);
+  background:var(--card);color:var(--ink);padding:7px 14px;border-radius:11px;
+  backdrop-filter:blur(8px);transition:transform .16s,border-color .16s}
+.share a:hover,.share button:hover{transform:translateY(-2px);border-color:var(--pink)}
+.share .line:hover{border-color:#06c755}
+/* --- contribute ---------------------------------------------------------- */
+.helpout{border:1px dashed var(--line);border-radius:14px;padding:14px 17px;
+  margin:18px 0;background:var(--card)}
+.helpout p{margin:0 0 10px;font-size:.94rem;color:var(--dim)}
+.helpout a{display:inline-block;text-decoration:none;font-weight:700;
+  font-size:.9rem;border:1px solid transparent;color:#fff;padding:8px 16px;
+  border-radius:11px;background:linear-gradient(120deg,var(--grape),var(--pink));
+  transition:transform .16s}
+.helpout a:hover{transform:translateY(-2px)}
+.iso .fix{margin-left:auto;font-size:.8rem;text-decoration:none;color:var(--grape);
+  border:1px solid var(--line);border-radius:999px;padding:3px 11px;
+  white-space:nowrap;transition:transform .15s,border-color .15s}
+.iso .fix:hover{transform:translateY(-2px);border-color:var(--grape)}
 </style>
 </head>
 <body>
@@ -277,6 +332,7 @@ html[lang=zh] [data-i18n=zh]{display:inline}
 <nav class="crumb"><a href="/"><span data-i18n="en">Home</span><span data-i18n="th">หน้าแรก</span><span data-i18n="zh">首页</span></a></nav>
 <main>
 <div id="shelfpage"><h1><span data-i18n="en">My Shelf</span><span data-i18n="th">ชั้นของฉัน</span><span data-i18n="zh">我的架子</span></h1><p class="tag"><span data-i18n="en">Kept on this device only — no account, nothing sent anywhere. Back it up if it matters to you.</span><span data-i18n="th">เก็บไว้ในเครื่องนี้เท่านั้น ไม่ต้องสมัครสมาชิก ไม่ส่งข้อมูลไปไหน ถ้าสำคัญกับคุณ อย่าลืมสำรองไว้</span><span data-i18n="zh">只存在这台设备上 — 无需账号，不会上传。重要的话请备份。</span></p><ul class="tallies"><li><span class="big" id="t-have">0</span><span class="lbl"><span data-i18n="en">Have</span><span data-i18n="th">มีแล้ว</span><span data-i18n="zh">已有</span></span></li><li><span class="big" id="t-uniq">0</span><span class="lbl"><span data-i18n="en">figures</span><span data-i18n="th">ตัว</span><span data-i18n="zh">款</span></span></li><li><span class="big" id="t-dup">0</span><span class="lbl"><span data-i18n="en">Doubles</span><span data-i18n="th">ตัวซ้ำ</span><span data-i18n="zh">重复款</span></span></li><li><span class="big" id="t-want">0</span><span class="lbl"><span data-i18n="en">Seeking</span><span data-i18n="th">กำลังตามหา</span><span data-i18n="zh">想要</span></span></li><li><span class="big" id="t-sets">0</span><span class="lbl"><span data-i18n="en">sets</span><span data-i18n="th">ชุด</span><span data-i18n="zh">套</span></span></li></ul><p class="tag hidden" id="emptyshelf"><span data-i18n="en">The shelf is waiting. Mark a figure you own and it will appear here.</span><span data-i18n="th">ชั้นยังว่างอยู่ กดว่ามีตัวไหนแล้ว เดี๋ยวมันจะมาอยู่ตรงนี้</span><span data-i18n="zh">架子还空着。标记你已有的款式，它就会出现在这里。</span></p><div id="shelfbody" class="hidden"><h2><span data-i18n="en">Series</span><span data-i18n="th">ซีรีส์</span><span data-i18n="zh">系列</span></h2><div id="sets"></div><section id="dupesec" class="hidden"><h2><span data-i18n="en">Doubles</span><span data-i18n="th">ตัวซ้ำ</span><span data-i18n="zh">重复款</span></h2><ul class="chips" id="dupes"></ul></section><section id="wantsec" class="hidden"><h2><span data-i18n="en">Seeking</span><span data-i18n="th">กำลังตามหา</span><span data-i18n="zh">想要</span></h2><ul class="chips" id="wants"></ul></section><h2><span data-i18n="en">Make a trade card</span><span data-i18n="th">ทำการ์ดแลกเปลี่ยน</span><span data-i18n="zh">制作交换卡</span></h2><p class="tag hidden" id="notrade"><span data-i18n="en">A trade card needs something to offer or something to look for. Mark a double, or tap the heart on a figure you want.</span><span data-i18n="th">การ์ดแลกเปลี่ยนต้องมีของให้แลก หรือของที่ตามหา กดเพิ่มตัวซ้ำ หรือกดหัวใจตัวที่อยากได้</span><span data-i18n="zh">交换卡需要有可换的或想找的。标记一个重复款，或点想要的爱心。</span></p><div id="tradeable" class="hidden"><p class="tag"><span data-i18n="en">A picture to post where trading already happens. Yours to share.</span><span data-i18n="th">รูปสำหรับโพสต์ในกลุ่มที่เขาแลกกันอยู่แล้ว เอาไปแชร์ได้เลย</span><span data-i18n="zh">一张可以发到现成交换群里的图。随你分享。</span></p><div class="acts"><button class="primary" data-shelf="make"><span data-i18n="en">Make a trade card</span><span data-i18n="th">ทำการ์ดแลกเปลี่ยน</span><span data-i18n="zh">制作交换卡</span></button></div><div id="cardwrap"></div><div class="acts hidden" id="cardacts"><button data-shelf="download"><span data-i18n="en">Save the card</span><span data-i18n="th">บันทึกการ์ด</span><span data-i18n="zh">保存卡片</span></button><button data-shelf="copy"><span data-i18n="en">Copy as text</span><span data-i18n="th">คัดลอกเป็นข้อความ</span><span data-i18n="zh">复制文字版</span></button><span class="said hidden"><span data-i18n="en">Copied</span><span data-i18n="th">คัดลอกแล้ว</span><span data-i18n="zh">已复制</span></span></div></div><h2>&nbsp;</h2><div class="acts"><button data-shelf="backup"><span data-i18n="en">Back up the shelf</span><span data-i18n="th">สำรองชั้นของฉัน</span><span data-i18n="zh">备份架子</span></button><button data-shelf="restore"><span data-i18n="en">Restore from a backup</span><span data-i18n="th">กู้คืนจากไฟล์สำรอง</span><span data-i18n="zh">从备份恢复</span></button><button class="quiet" data-shelf="clear"><span data-i18n="en">Clear the shelf</span><span data-i18n="th">ล้างชั้น</span><span data-i18n="zh">清空架子</span></button><input type="file" id="restorefile" accept="application/json,.json" class="hidden"></div></div><div class="hidden"><span data-ui="trade_have"><span data-i18n="en">HAVE</span><span data-i18n="th">มี</span><span data-i18n="zh">有</span></span><span data-ui="trade_want"><span data-i18n="en">LOOKING FOR</span><span data-i18n="th">ตามหา</span><span data-i18n="zh">找</span></span><span data-ui="and_more"><span data-i18n="en">and %d more</span><span data-i18n="th">และอีก %d</span><span data-i18n="zh">还有 %d 款</span></span><span data-ui="clear_sure"><span data-i18n="en">Clear the whole shelf? Back it up first if you might want it.</span><span data-i18n="th">ล้างทั้งชั้นเลยไหม ถ้าอาจจะอยากได้คืน สำรองไว้ก่อนนะ</span><span data-i18n="zh">要清空整个架子吗？可能还想要的话，先备份。</span></span><span data-ui="restored"><span data-i18n="en">Shelf restored</span><span data-i18n="th">กู้คืนชั้นเรียบร้อย</span><span data-i18n="zh">架子已恢复</span></span><span data-ui="restore_bad"><span data-i18n="en">That file was not a Poplucky backup</span><span data-i18n="th">ไฟล์นี้ไม่ใช่ไฟล์สำรองของ Poplucky</span><span data-i18n="zh">这不是 Poplucky 的备份文件</span></span></div></div>
+<div class="share" data-share-url="https://poplucky.net/shelf/"><span class="lbl"><span data-i18n="en">Share</span><span data-i18n="th">แชร์</span><span data-i18n="zh">分享</span></span><a class="line" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fpoplucky.net%2Fshelf%2F" target="_blank" rel="noopener">LINE</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpoplucky.net%2Fshelf%2F" target="_blank" rel="noopener">Facebook</a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpoplucky.net%2Fshelf%2F&amp;text=My%20Shelf" target="_blank" rel="noopener">X</a><button data-copylink><span data-i18n="en">Copy link</span><span data-i18n="th">คัดลอกลิงก์</span><span data-i18n="zh">复制链接</span></button><span class="said hidden"><span data-i18n="en">Link copied</span><span data-i18n="th">คัดลอกลิงก์แล้ว</span><span data-i18n="zh">链接已复制</span></span></div>
 </main>
 <footer><p data-i18n="en">A collector&#x27;s fan catalogue. Not affiliated with, endorsed by, or connected to POP MART. All character and series names belong to their creators and are used here to refer to the things they name.</p><p data-i18n="th">แคตตาล็อกของนักสะสม ไม่ได้มีส่วนเกี่ยวข้องหรือได้รับการรับรองจาก POP MART ชื่อตัวละครและซีรีส์ทั้งหมดเป็นของผู้สร้าง ใช้ที่นี่เพื่ออ้างถึงสิ่งที่ชื่อนั้นเรียกเท่านั้น</p><p data-i18n="zh">收藏者的同好目录。与 POP MART 无从属、认可或关联关系。所有角色与系列名称归其创作者所有，此处仅用于指称。</p></footer>
 </div>
@@ -299,6 +355,27 @@ html[lang=zh] [data-i18n=zh]{display:inline}
     var b=e.target.closest('.langs button'); if(b) set(b.dataset.l);
   });
   set(saved);
+
+  /* copy link */
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-copylink]'); if(!b) return;
+    var row=b.closest('.share'); if(!row) return;
+    var url=row.dataset.shareUrl||location.href;
+    function done(){
+      var s=row.querySelector('.said');
+      if(s){ s.classList.remove('hidden');
+             setTimeout(function(){s.classList.add('hidden');},1800); }
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(done,done);
+    } else {
+      var ta=document.createElement('textarea'); ta.value=url;
+      ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select();
+      try{document.execCommand('copy');}catch(err){}
+      ta.remove(); done();
+    }
+  });
 
   /* hidden bell: shake a blind box and something rattles */
   var box=document.querySelector('.logo .b');

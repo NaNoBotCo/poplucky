@@ -265,6 +265,61 @@ html[lang=zh] [data-i18n=zh]{display:inline}
   border:1px solid var(--line);box-shadow:var(--shadow);display:block}
 .said{color:var(--mint);font-size:.9rem;margin-left:4px;align-self:center}
 .hidden{display:none !important}
+
+/* --- the box ------------------------------------------------------------ */
+.box{display:block;width:100%;height:auto;overflow:visible}
+.box-lid{transition:transform .42s cubic-bezier(.34,1.6,.5,1)}
+.card:hover .box-lid{transform:translateY(-7px) rotate(-4deg)}
+.shelf-item.owned .box-lid{transform:translateY(-19px) rotate(-13deg)}
+.shelf-item.owned .box-body{filter:saturate(1.12)}
+.boxwrap{position:relative;margin:-4px 0 9px}
+.card .boxwrap{max-width:118px}
+/* an opened box gets a glow where the lid was */
+.shelf-item.owned .boxwrap::after{content:"";position:absolute;left:22%;
+  right:22%;top:34%;height:16px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(255,233,168,.85),transparent 70%);
+  pointer-events:none}
+@media (prefers-reduced-motion:reduce){.box-lid{transition:none}}
+/* figure page hero */
+.herobox{display:flex;align-items:flex-end;gap:22px;flex-wrap:wrap;margin:6px 0 4px}
+.herobox .boxwrap{width:148px;max-width:38vw;margin:0}
+.herobox .heroname{flex:1;min-width:210px}
+.herobox h1{margin:0 0 .1em}
+/* --- odds as a wall of boxes -------------------------------------------- */
+.oddswall{margin:14px 0 4px;padding:0}
+.oddswall .wall{display:grid;grid-template-columns:repeat(var(--cols),1fr);
+  gap:3px;max-width:560px}
+.oddswall .cell{aspect-ratio:3/4;border-radius:2px;background:var(--line);
+  opacity:.62}
+.oddswall .cell.lit{background:linear-gradient(150deg,var(--gold),var(--pink));
+  opacity:1;box-shadow:0 0 0 2px rgba(255,111,165,.30),0 0 13px rgba(247,179,43,.65);
+  animation:litpulse 2.9s ease-in-out infinite}
+@keyframes litpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.32)}}
+@media (prefers-reduced-motion:reduce){.oddswall .cell.lit{animation:none}}
+.oddscap{color:var(--dim);font-size:.88rem;margin:7px 0 0}
+/* --- share row ---------------------------------------------------------- */
+.share{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:26px 0 0}
+.share .lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--dim);margin-right:2px}
+.share a,.share button{font:inherit;font-size:.88rem;font-weight:650;
+  cursor:pointer;text-decoration:none;border:1px solid var(--line);
+  background:var(--card);color:var(--ink);padding:7px 14px;border-radius:11px;
+  backdrop-filter:blur(8px);transition:transform .16s,border-color .16s}
+.share a:hover,.share button:hover{transform:translateY(-2px);border-color:var(--pink)}
+.share .line:hover{border-color:#06c755}
+/* --- contribute ---------------------------------------------------------- */
+.helpout{border:1px dashed var(--line);border-radius:14px;padding:14px 17px;
+  margin:18px 0;background:var(--card)}
+.helpout p{margin:0 0 10px;font-size:.94rem;color:var(--dim)}
+.helpout a{display:inline-block;text-decoration:none;font-weight:700;
+  font-size:.9rem;border:1px solid transparent;color:#fff;padding:8px 16px;
+  border-radius:11px;background:linear-gradient(120deg,var(--grape),var(--pink));
+  transition:transform .16s}
+.helpout a:hover{transform:translateY(-2px)}
+.iso .fix{margin-left:auto;font-size:.8rem;text-decoration:none;color:var(--grape);
+  border:1px solid var(--line);border-radius:999px;padding:3px 11px;
+  white-space:nowrap;transition:transform .15s,border-color .15s}
+.iso .fix:hover{transform:translateY(-2px);border-color:var(--grape)}
 </style>
 </head>
 <body>
@@ -277,6 +332,7 @@ html[lang=zh] [data-i18n=zh]{display:inline}
 
 <main>
 <h1>Poplucky</h1><p class="tag"><span data-i18n="en">Every blind box, catalogued in the words collectors actually use.</span><span data-i18n="th">ทุกกล่องสุ่ม จัดหมวดด้วยคำที่นักสะสมใช้จริง</span><span data-i18n="zh">每一个盲盒，用收藏者真正使用的词语编目。</span></p><h2><span data-i18n="en">Characters</span><span data-i18n="th">ตัวละคร</span><span data-i18n="zh">角色</span></h2><ul class="dir"><li><a href="/ip/crybaby/"><span class=""><span class="nm" data-lang="en" title="">CRYBABY</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">CRYBABY</span><span class="nm" data-lang="zh" title="">哭娃</span></span></a> <span class="n">(23)</span><ul class="sub"><li><a href="/series/crybaby-crying-again-plush/"><span class=""><span class="nm" data-lang="en" title="">Crying Again Vinyl Face Plush</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">Crying Again Vinyl Face Plush</span><span class="nm" data-lang="zh" title="">眼泪工厂系列</span></span> <span class="n">(8)</span></a></li><li><a href="/series/crybaby-crying-again/"><span class=""><span class="nm" data-lang="en" title="">Crying Again</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">Crying Again</span><span class="nm" data-lang="zh" title="">眼泪工厂系列</span></span> <span class="n">(15)</span></a></li></ul></li><li><a href="/ip/labubu/"><span class=""><span class="nm" data-lang="en" title="">Labubu</span><span class="nm" data-lang="th" title="">ลาบูบู้</span><span class="nm" data-lang="zh" title="">拉布布</span></span></a> <span class="n">(15)</span><ul class="sub"><li><a href="/series/labubu-big-into-energy/"><span class=""><span class="nm" data-lang="en" title="">Big into Energy</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">Big into Energy</span><span class="nm" data-lang="zh" title="">前方高能系列</span></span> <span class="n">(7)</span></a></li><li><a href="/series/labubu-good-luck-to-you/"><span class=""><span class="nm" data-lang="en" title="">Good Luck To You</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">Good Luck To You</span><span class="nm nm-fb" data-lang="zh" title="no name recorded in this language">Good Luck To You</span></span> <span class="n">(1)</span></a></li><li><a href="/series/labubu-have-a-seat/"><span class=""><span class="nm" data-lang="en" title="">Have a Seat</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">Have a Seat</span><span class="nm" data-lang="zh" title="">坐坐派对</span></span> <span class="n">(7)</span></a></li></ul></li><li><a href="/ip/molly/"><span class=""><span class="nm" data-lang="en" title="">MOLLY</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">MOLLY</span><span class="nm" data-lang="zh" title="">茉莉</span></span></a> <span class="n">(13)</span><ul class="sub"><li><a href="/series/molly-carb-lover/"><span class=""><span class="nm" data-lang="en" title="">Carb-Lover</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">Carb-Lover</span><span class="nm nm-fb" data-lang="zh" title="no name recorded in this language">Carb-Lover</span></span> <span class="n">(13)</span></a></li></ul></li><li><a href="/ip/skullpanda/"><span class=""><span class="nm" data-lang="en" title="">SKULLPANDA</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">SKULLPANDA</span><span class="nm nm-fb" data-lang="zh" title="no name recorded in this language">SKULLPANDA</span></span></a> <span class="n">(13)</span><ul class="sub"><li><a href="/series/skullpanda-the-sound/"><span class=""><span class="nm" data-lang="en" title="">The Sound</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">The Sound</span><span class="nm" data-lang="zh" title="">声音系列</span></span> <span class="n">(13)</span></a></li></ul></li></ul><h2><span data-i18n="en">In Search Of</span><span data-i18n="th">ยังตามหาอยู่</span><span data-i18n="zh">仍在寻找</span></h2><p class="tag"><span data-i18n="en">What this catalogue does not know yet. Every line is an invitation.</span><span data-i18n="th">สิ่งที่แคตตาล็อกนี้ยังไม่รู้ ทุกบรรทัดคือคำเชิญ</span><span data-i18n="zh">本目录尚未收录的内容。每一条都是一份邀请。</span> <a href="/iso/"><span data-i18n="en">In Search Of</span><span data-i18n="th">ยังตามหาอยู่</span><span data-i18n="zh">仍在寻找</span> →</a></p>
+<div class="share" data-share-url="https://poplucky.net/"><span class="lbl"><span data-i18n="en">Share</span><span data-i18n="th">แชร์</span><span data-i18n="zh">分享</span></span><a class="line" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fpoplucky.net%2F" target="_blank" rel="noopener">LINE</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpoplucky.net%2F" target="_blank" rel="noopener">Facebook</a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpoplucky.net%2F&amp;text=Poplucky" target="_blank" rel="noopener">X</a><button data-copylink><span data-i18n="en">Copy link</span><span data-i18n="th">คัดลอกลิงก์</span><span data-i18n="zh">复制链接</span></button><span class="said hidden"><span data-i18n="en">Link copied</span><span data-i18n="th">คัดลอกลิงก์แล้ว</span><span data-i18n="zh">链接已复制</span></span></div>
 </main>
 <footer><p data-i18n="en">A collector&#x27;s fan catalogue. Not affiliated with, endorsed by, or connected to POP MART. All character and series names belong to their creators and are used here to refer to the things they name.</p><p data-i18n="th">แคตตาล็อกของนักสะสม ไม่ได้มีส่วนเกี่ยวข้องหรือได้รับการรับรองจาก POP MART ชื่อตัวละครและซีรีส์ทั้งหมดเป็นของผู้สร้าง ใช้ที่นี่เพื่ออ้างถึงสิ่งที่ชื่อนั้นเรียกเท่านั้น</p><p data-i18n="zh">收藏者的同好目录。与 POP MART 无从属、认可或关联关系。所有角色与系列名称归其创作者所有，此处仅用于指称。</p></footer>
 </div>
@@ -299,6 +355,27 @@ html[lang=zh] [data-i18n=zh]{display:inline}
     var b=e.target.closest('.langs button'); if(b) set(b.dataset.l);
   });
   set(saved);
+
+  /* copy link */
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-copylink]'); if(!b) return;
+    var row=b.closest('.share'); if(!row) return;
+    var url=row.dataset.shareUrl||location.href;
+    function done(){
+      var s=row.querySelector('.said');
+      if(s){ s.classList.remove('hidden');
+             setTimeout(function(){s.classList.add('hidden');},1800); }
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(done,done);
+    } else {
+      var ta=document.createElement('textarea'); ta.value=url;
+      ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select();
+      try{document.execCommand('copy');}catch(err){}
+      ta.remove(); done();
+    }
+  });
 
   /* hidden bell: shake a blind box and something rattles */
   var box=document.querySelector('.logo .b');

@@ -326,7 +326,12 @@ for _en, _zh, _c_en, _c_zh in _SEAT:
     _rec = dict(color=_c_en, color_src=S_SEAT,
                 name_zh=_zh, name_zh_src=S_HUPU,
                 name_pairing_src="inference")
-    if _c_en != _c_zh and not (_c_en == "gray" and _c_zh == "grey"):
+    # Only a real contradiction if the two are different colours -- not the
+    # same colour at different precision ("brown" vs "golden-brown").
+    _clash = (_c_en != _c_zh
+              and _c_en not in _c_zh and _c_zh not in _c_en
+              and {_c_en, _c_zh} != {"gray", "grey"})
+    if _clash:
         _rec["contested"] = True
         _rec["note"] = ("Colour is contested: English sources say %s, the Chinese "
                         "listing says %s. Unresolved." % (_c_en, _c_zh))

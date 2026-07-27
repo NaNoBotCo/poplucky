@@ -47,6 +47,8 @@ Locale = **language × market**, not just translated UI. A Thai reader sees Thai
 
 *Original wording:* Collection tracker: localStorage-first, zero accounts. Mark owned/wished/dupe per variant. The delight: marking a figure owned plays a box-opening reveal animation. Dupes auto-compose a **trade card** — a beautiful shareable ISO/FT image ("have these / seeking these", bilingual) for the FB groups and Discords where trading already happens. We host no marketplace; we make the flyer.
 
+**Phase 1.5 — visual + participatory. ✅ BUILT 2026-07-27.** *The box is the icon* — procedural SVG blind boxes per figure (deterministic, tinted by recorded colour, holo for secrets), and **owned boxes open** with light spilling out. Odds drawn to scale as a wall of 72/144/288 boxes with one lit. Share row LINE-first on every page. Contribution with no backend: pre-filled GitHub issues on every gap and every contradiction.
+
 **Phase 2 — the odds toolkit.** Set-completion calculator (box price, case size, disclosed secret odds → expected cost to finish, dupe-count distribution), gift-wishlist links, series completion meters.
 
 **Phase 3 — contributions + reference.** Cloudflare Worker moderation queue (the mueang-map-sync pattern) for community submissions: new releases, regional sightings, fan-name folksonomy. Calm authenticity *reference* pages per series (what official verification looks like, link to Pop Mart's own QR flow) — we describe the ritual, never issue verdicts.

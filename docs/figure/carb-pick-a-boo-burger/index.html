@@ -265,6 +265,61 @@ html[lang=zh] [data-i18n=zh]{display:inline}
   border:1px solid var(--line);box-shadow:var(--shadow);display:block}
 .said{color:var(--mint);font-size:.9rem;margin-left:4px;align-self:center}
 .hidden{display:none !important}
+
+/* --- the box ------------------------------------------------------------ */
+.box{display:block;width:100%;height:auto;overflow:visible}
+.box-lid{transition:transform .42s cubic-bezier(.34,1.6,.5,1)}
+.card:hover .box-lid{transform:translateY(-7px) rotate(-4deg)}
+.shelf-item.owned .box-lid{transform:translateY(-19px) rotate(-13deg)}
+.shelf-item.owned .box-body{filter:saturate(1.12)}
+.boxwrap{position:relative;margin:-4px 0 9px}
+.card .boxwrap{max-width:118px}
+/* an opened box gets a glow where the lid was */
+.shelf-item.owned .boxwrap::after{content:"";position:absolute;left:22%;
+  right:22%;top:34%;height:16px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(255,233,168,.85),transparent 70%);
+  pointer-events:none}
+@media (prefers-reduced-motion:reduce){.box-lid{transition:none}}
+/* figure page hero */
+.herobox{display:flex;align-items:flex-end;gap:22px;flex-wrap:wrap;margin:6px 0 4px}
+.herobox .boxwrap{width:148px;max-width:38vw;margin:0}
+.herobox .heroname{flex:1;min-width:210px}
+.herobox h1{margin:0 0 .1em}
+/* --- odds as a wall of boxes -------------------------------------------- */
+.oddswall{margin:14px 0 4px;padding:0}
+.oddswall .wall{display:grid;grid-template-columns:repeat(var(--cols),1fr);
+  gap:3px;max-width:560px}
+.oddswall .cell{aspect-ratio:3/4;border-radius:2px;background:var(--line);
+  opacity:.62}
+.oddswall .cell.lit{background:linear-gradient(150deg,var(--gold),var(--pink));
+  opacity:1;box-shadow:0 0 0 2px rgba(255,111,165,.30),0 0 13px rgba(247,179,43,.65);
+  animation:litpulse 2.9s ease-in-out infinite}
+@keyframes litpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.32)}}
+@media (prefers-reduced-motion:reduce){.oddswall .cell.lit{animation:none}}
+.oddscap{color:var(--dim);font-size:.88rem;margin:7px 0 0}
+/* --- share row ---------------------------------------------------------- */
+.share{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:26px 0 0}
+.share .lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--dim);margin-right:2px}
+.share a,.share button{font:inherit;font-size:.88rem;font-weight:650;
+  cursor:pointer;text-decoration:none;border:1px solid var(--line);
+  background:var(--card);color:var(--ink);padding:7px 14px;border-radius:11px;
+  backdrop-filter:blur(8px);transition:transform .16s,border-color .16s}
+.share a:hover,.share button:hover{transform:translateY(-2px);border-color:var(--pink)}
+.share .line:hover{border-color:#06c755}
+/* --- contribute ---------------------------------------------------------- */
+.helpout{border:1px dashed var(--line);border-radius:14px;padding:14px 17px;
+  margin:18px 0;background:var(--card)}
+.helpout p{margin:0 0 10px;font-size:.94rem;color:var(--dim)}
+.helpout a{display:inline-block;text-decoration:none;font-weight:700;
+  font-size:.9rem;border:1px solid transparent;color:#fff;padding:8px 16px;
+  border-radius:11px;background:linear-gradient(120deg,var(--grape),var(--pink));
+  transition:transform .16s}
+.helpout a:hover{transform:translateY(-2px)}
+.iso .fix{margin-left:auto;font-size:.8rem;text-decoration:none;color:var(--grape);
+  border:1px solid var(--line);border-radius:999px;padding:3px 11px;
+  white-space:nowrap;transition:transform .15s,border-color .15s}
+.iso .fix:hover{transform:translateY(-2px);border-color:var(--grape)}
 </style>
 </head>
 <body>
@@ -276,7 +331,8 @@ html[lang=zh] [data-i18n=zh]{display:inline}
 </header>
 <nav class="crumb"><a href="/"><span data-i18n="en">Home</span><span data-i18n="th">หน้าแรก</span><span data-i18n="zh">首页</span></a></nav>
 <main>
-<h1><span class=""><span class="nm" data-lang="en" title="">Pick-a-Boo Burger</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">Pick-a-Boo Burger</span><span class="nm nm-fb" data-lang="zh" title="no name recorded in this language">Pick-a-Boo Burger</span></span></h1><p class="tag"><span data-i18n="en">regular</span><span data-i18n="th">ธรรมดา</span><span data-i18n="zh">常规款</span></p><div class="shelfsolo shelf-item" data-id="carb-pick-a-boo-burger"><span class="lbl"><span data-i18n="en">Have</span><span data-i18n="th">มีแล้ว</span><span data-i18n="zh">已有</span></span><div class="ctl"><button data-act="dec" aria-label="one fewer">−</button><span class="cnt zero">0</span><button data-act="inc" aria-label="one more">+</button><button class="wish" data-act="wish" aria-pressed="false" aria-label="seeking">♡</button></div><span class="mine"><span data-i18n="en">On your shelf</span><span data-i18n="th">อยู่บนชั้นแล้ว</span><span data-i18n="zh">已在架上</span> ✓</span></div><h2><span data-i18n="en">Where it sits</span><span data-i18n="th">อยู่ตรงไหน</span><span data-i18n="zh">所属</span></h2><ul class="dir"><li><a href="/series/molly-carb-lover/"><span class=""><span class="nm" data-lang="en" title="">Carb-Lover</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">Carb-Lover</span><span class="nm nm-fb" data-lang="zh" title="no name recorded in this language">Carb-Lover</span></span></a></li><li><a href="/ip/molly/"><span class=""><span class="nm" data-lang="en" title="">MOLLY</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">MOLLY</span><span class="nm" data-lang="zh" title="">茉莉</span></span></a></li></ul><section class="prov"><h2><span data-i18n="en">Where this comes from</span><span data-i18n="th">ที่มาของข้อมูล</span><span data-i18n="zh">资料来源</span></h2><table><thead><tr><th><span data-i18n="en">Field</span><span data-i18n="th">ข้อมูล</span><span data-i18n="zh">字段</span></th><th><span data-i18n="en">Value</span><span data-i18n="th">ค่า</span><span data-i18n="zh">内容</span></th><th><span data-i18n="en">Source</span><span data-i18n="th">แหล่งที่มา</span><span data-i18n="zh">来源</span></th></tr></thead><tbody><tr><th>Name (EN)</th><td>Pick-a-Boo Burger</td><td><a class="src src-url" href="https://thetoypool.com/pop-mart/series/molly/carb+lover-series/" rel="nofollow noopener" target="_blank">thetoypool.com</a></td></tr></tbody></table></section>
+<div class="herobox"><span class="shelf-item boxwrap" data-id="carb-pick-a-boo-burger"><svg class="box" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><defs><linearGradient id="be1e3bc1-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#b796ec"/><stop offset="100%" stop-color="#6433b1"/></linearGradient><linearGradient id="be1e3bc1-l" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b796ec"/><stop offset="100%" stop-color="#9062da"/></linearGradient></defs><ellipse class="box-shadow" cx="60" cy="128" rx="40" ry="6" fill="#000" opacity=".13"/><g class="box-body"><rect x="12" y="56" width="96" height="66" rx="9" fill="url(#be1e3bc1-g)"/><path d="M12 96 L108 78 L108 92 L12 110 Z" fill="#fff" opacity=".20"/><path d="M18 62 L44 62 L26 122 L14 122 Z" fill="#fff" opacity=".13"/></g><g class="box-lid" style="transform-origin:60px 56px"><g transform="rotate(-2 60 46)"><rect x="6" y="30" width="108" height="28" rx="8" fill="url(#be1e3bc1-l)"/></g></g></svg></span><span class="heroname"><h1><span class=""><span class="nm" data-lang="en" title="">Pick-a-Boo Burger</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">Pick-a-Boo Burger</span><span class="nm nm-fb" data-lang="zh" title="no name recorded in this language">Pick-a-Boo Burger</span></span></h1><p class="tag"><span data-i18n="en">regular</span><span data-i18n="th">ธรรมดา</span><span data-i18n="zh">常规款</span></p></span></div><div class="shelfsolo shelf-item" data-id="carb-pick-a-boo-burger"><span class="lbl"><span data-i18n="en">Have</span><span data-i18n="th">มีแล้ว</span><span data-i18n="zh">已有</span></span><div class="ctl"><button data-act="dec" aria-label="one fewer">−</button><span class="cnt zero">0</span><button data-act="inc" aria-label="one more">+</button><button class="wish" data-act="wish" aria-pressed="false" aria-label="seeking">♡</button></div><span class="mine"><span data-i18n="en">On your shelf</span><span data-i18n="th">อยู่บนชั้นแล้ว</span><span data-i18n="zh">已在架上</span> ✓</span></div><h2><span data-i18n="en">Where it sits</span><span data-i18n="th">อยู่ตรงไหน</span><span data-i18n="zh">所属</span></h2><ul class="dir"><li><a href="/series/molly-carb-lover/"><span class=""><span class="nm" data-lang="en" title="">Carb-Lover</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">Carb-Lover</span><span class="nm nm-fb" data-lang="zh" title="no name recorded in this language">Carb-Lover</span></span></a></li><li><a href="/ip/molly/"><span class=""><span class="nm" data-lang="en" title="">MOLLY</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">MOLLY</span><span class="nm" data-lang="zh" title="">茉莉</span></span></a></li></ul><section class="prov"><h2><span data-i18n="en">Where this comes from</span><span data-i18n="th">ที่มาของข้อมูล</span><span data-i18n="zh">资料来源</span></h2><table><thead><tr><th><span data-i18n="en">Field</span><span data-i18n="th">ข้อมูล</span><span data-i18n="zh">字段</span></th><th><span data-i18n="en">Value</span><span data-i18n="th">ค่า</span><span data-i18n="zh">内容</span></th><th><span data-i18n="en">Source</span><span data-i18n="th">แหล่งที่มา</span><span data-i18n="zh">来源</span></th></tr></thead><tbody><tr><th>Name (EN)</th><td>Pick-a-Boo Burger</td><td><a class="src src-url" href="https://thetoypool.com/pop-mart/series/molly/carb+lover-series/" rel="nofollow noopener" target="_blank">thetoypool.com</a></td></tr></tbody></table></section>
+<div class="share" data-share-url="https://poplucky.net/figure/carb-pick-a-boo-burger/"><span class="lbl"><span data-i18n="en">Share</span><span data-i18n="th">แชร์</span><span data-i18n="zh">分享</span></span><a class="line" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fpoplucky.net%2Ffigure%2Fcarb-pick-a-boo-burger%2F" target="_blank" rel="noopener">LINE</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpoplucky.net%2Ffigure%2Fcarb-pick-a-boo-burger%2F" target="_blank" rel="noopener">Facebook</a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fpoplucky.net%2Ffigure%2Fcarb-pick-a-boo-burger%2F&amp;text=Pick-a-Boo%20Burger" target="_blank" rel="noopener">X</a><button data-copylink><span data-i18n="en">Copy link</span><span data-i18n="th">คัดลอกลิงก์</span><span data-i18n="zh">复制链接</span></button><span class="said hidden"><span data-i18n="en">Link copied</span><span data-i18n="th">คัดลอกลิงก์แล้ว</span><span data-i18n="zh">链接已复制</span></span></div>
 </main>
 <footer><p data-i18n="en">A collector&#x27;s fan catalogue. Not affiliated with, endorsed by, or connected to POP MART. All character and series names belong to their creators and are used here to refer to the things they name.</p><p data-i18n="th">แคตตาล็อกของนักสะสม ไม่ได้มีส่วนเกี่ยวข้องหรือได้รับการรับรองจาก POP MART ชื่อตัวละครและซีรีส์ทั้งหมดเป็นของผู้สร้าง ใช้ที่นี่เพื่ออ้างถึงสิ่งที่ชื่อนั้นเรียกเท่านั้น</p><p data-i18n="zh">收藏者的同好目录。与 POP MART 无从属、认可或关联关系。所有角色与系列名称归其创作者所有，此处仅用于指称。</p></footer>
 </div>
@@ -299,6 +355,27 @@ html[lang=zh] [data-i18n=zh]{display:inline}
     var b=e.target.closest('.langs button'); if(b) set(b.dataset.l);
   });
   set(saved);
+
+  /* copy link */
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-copylink]'); if(!b) return;
+    var row=b.closest('.share'); if(!row) return;
+    var url=row.dataset.shareUrl||location.href;
+    function done(){
+      var s=row.querySelector('.said');
+      if(s){ s.classList.remove('hidden');
+             setTimeout(function(){s.classList.add('hidden');},1800); }
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(done,done);
+    } else {
+      var ta=document.createElement('textarea'); ta.value=url;
+      ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select();
+      try{document.execCommand('copy');}catch(err){}
+      ta.remove(); done();
+    }
+  });
 
   /* hidden bell: shake a blind box and something rattles */
   var box=document.querySelector('.logo .b');
