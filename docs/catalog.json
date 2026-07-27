@@ -1,0 +1,1456 @@
+{
+ "ip": [
+  {
+   "node": "ip",
+   "id": "crybaby",
+   "name_en": "CRYBABY",
+   "name_en_src": "official",
+   "name_zh": "哭娃",
+   "name_zh_src": "https://stcn.com/article/detail/2163016.html",
+   "artist": "Molly Yllom",
+   "artist_src": "community",
+   "name_zh_register": "nickname",
+   "_body": "Created by a **Thai** artist working as Molly Yllom — not to be confused with Pop Mart's separate MOLLY character. Crying is the whole premise: the figures weep and are cheerful about it.\n\n*Regional note* — CRYBABY's Thai origin makes it the natural doorway for Thai-language readers, and Thai-market releases around this IP deserve close tracking.\n\n*Naming* — 哭娃 is what Chinese media and Taiwanese retailers call this character, introduced with \"also known as\" rather than as a product name. Pop Mart keeps CRYBABY in Latin on its own Chinese pages. Recorded as a nickname, which is what it is.\n",
+   "_kind": "ip"
+  },
+  {
+   "node": "ip",
+   "id": "labubu",
+   "name_en": "Labubu",
+   "name_en_src": "official",
+   "name_th": "ลาบูบู้",
+   "name_th_src": "community",
+   "name_zh": "拉布布",
+   "name_zh_src": "https://zh.wikipedia.org/wiki/%E6%8B%89%E5%B8%83%E5%B8%83",
+   "artist": "Kasing Lung",
+   "artist_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "artist_zh": "龙家升",
+   "artist_zh_contested": true,
+   "artist_zh_src": "https://ipr.mofcom.gov.cn/article/gjxw/zfxd/mz/202511/1993778.html",
+   "universe_en": "The Monsters",
+   "universe_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "universe_zh": "精灵天团",
+   "universe_zh_src": "https://zh.wikipedia.org/wiki/%E6%8B%89%E5%B8%83%E5%B8%83",
+   "_body": "Elf-like creature with a serrated grin, from Kasing Lung's THE MONSTERS universe (精灵天团). The teeth are the collector's tell: authentic figures are consistently described as having exactly nine, evenly gapped.\n\n*Vernacular* — counterfeits are called **Lafufu** across every language community, English included. The word is affectionate as often as it is scornful; plenty of collectors keep a Lafufu on the shelf on purpose.\n\n*Naming* — 拉布布 is the standard Chinese rendering in media, encyclopedic and even Chinese government usage, but **Pop Mart itself brands the character in Latin letters** even on its Chinese storefronts. The artist's given name appears as both 龙家升 and 龙家昇 depending on source; the simplified 升 is used here on the strength of the ministry citation.\n",
+   "_kind": "ip"
+  },
+  {
+   "node": "ip",
+   "id": "molly",
+   "name_en": "MOLLY",
+   "name_en_src": "official",
+   "name_th": "",
+   "name_zh": "茉莉",
+   "name_zh_src": "https://zh.wikipedia.org/zh-tw/%E8%8C%89%E8%8E%89_(%E8%97%9D%E8%A1%93%E4%BA%BA%E5%81%B6)",
+   "artist": "Kenny Wong",
+   "artist_src": "https://zh.wikipedia.org/zh-tw/%E8%8C%89%E8%8E%89_(%E8%97%9D%E8%A1%93%E4%BA%BA%E5%81%B6)",
+   "artist_zh": "王信明",
+   "artist_zh_src": "https://zh.wikipedia.org/zh-tw/%E8%8C%89%E8%8E%89_(%E8%97%9D%E8%A1%93%E4%BA%BA%E5%81%B6)",
+   "_body": "Pop Mart's longest-running flagship character.\n\n*Naming* — 茉莉 is encyclopedic and media usage; Pop Mart brands the IP as MOLLY in Latin on its own storefronts.\n",
+   "_kind": "ip"
+  },
+  {
+   "node": "ip",
+   "id": "skullpanda",
+   "name_en": "SKULLPANDA",
+   "name_en_src": "official",
+   "name_th": "",
+   "name_zh": "",
+   "artist": "Xiong Miao",
+   "artist_src": "community",
+   "artist_zh": "熊喵",
+   "artist_zh_src": "community",
+   "_body": "Pop Mart house IP. Series lean conceptual, each release built around one theme rather than a cast of named friends.\n\n*Naming note* — no official Chinese rendering of the character name was found; Pop Mart appears to use the Latin \"SKULLPANDA\" even in Chinese-market materials. 熊喵 is the **artist**, not the character. Left blank rather than guessed.\n",
+   "_kind": "ip"
+  }
+ ],
+ "series": [
+  {
+   "node": "series",
+   "id": "crybaby-crying-again-plush",
+   "ip": "crybaby",
+   "name_en": "Crying Again Vinyl Face Plush",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "name_th": "",
+   "name_zh": "眼泪工厂系列",
+   "name_zh_src": "https://www.popmart.com/hk/products/1234/crybaby%E7%9C%BC%E6%B7%9A%E5%B7%A5%E5%BB%A0%E7%B3%BB%E5%88%97-%E6%90%AA%E8%86%A0%E8%87%89%E6%AF%9B%E7%B5%A8%E7%9B%B2%E7%9B%92",
+   "edition_scope": "global",
+   "edition_scope_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "form": "vinyl-face-plush",
+   "form_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "released": "",
+   "released_src": "",
+   "roster_complete": true,
+   "set_size": 6,
+   "set_size_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "_body": "The plush cousin of *Crying Again*, and the sharpest argument in this catalogue for keeping **form** as its own axis.\n\nSame IP, same series name, six regulars instead of twelve — and the two secrets here, Baby Blonde and Baby Brown, are plain regulars in the figures line. Rarity is a property of a figure *within a form*, never of a name.\n",
+   "_kind": "series"
+  },
+  {
+   "node": "series",
+   "id": "crybaby-crying-again",
+   "ip": "crybaby",
+   "name_en": "Crying Again",
+   "name_en_src": "official",
+   "name_th": "",
+   "name_zh": "眼泪工厂系列",
+   "name_zh_src": "https://www.popmart.com/hk/products/1131/crybaby-%E7%9C%BC%E6%B7%9A%E5%B7%A5%E5%BB%A0%E7%B3%BB%E5%88%97%E6%89%8B%E8%BE%A6",
+   "edition_scope": "global",
+   "edition_scope_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "form": "figure",
+   "form_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "released": "2024-09-27",
+   "released_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "roster_complete": true,
+   "secret_odds": "1/144 · 1/144 · 1/288",
+   "secret_odds_src": "https://toysez.com/collections/crybaby-crying-again-series",
+   "set_size": 12,
+   "set_size_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "Twelve regulars and — unusually — **three** secrets, tiered: two at 1/144 and one \"super secret\" at 1/288.\n\n**Do not confuse this with the plush.** There is a separate *Crying Again Vinyl Face Plush* line sharing the name, with a different and smaller roster. Two figures, Baby Blonde and Baby Brown, are ordinary regulars here and **secrets** over there. A collector who checks the wrong list will think they pulled a chase, or fail to realise they did.\n\n*Naming* — the Chinese name is a **renaming, not a translation**: 眼泪工厂系列, \"Tear Factory\". Anyone translating \"Crying Again\" into Chinese lands on a name that no Chinese collector uses. The mapping is provable because Pop Mart serves both titles under the same product ID.\n",
+   "_kind": "series"
+  },
+  {
+   "node": "series",
+   "id": "labubu-big-into-energy",
+   "ip": "labubu",
+   "name_en": "Big into Energy",
+   "name_en_src": "official",
+   "name_th": "",
+   "name_zh": "前方高能系列",
+   "name_zh_src": "https://www.popmart.com/mo/products/1990/the-monsters-%E5%89%8D%E6%96%B9%E9%AB%98%E8%83%BD%E7%B3%BB%E5%88%97-%E6%90%AA%E8%86%A0%E6%AF%9B%E7%B5%A8%E6%8E%9B%E4%BB%B6%E7%9B%B2%E7%9B%92",
+   "edition_scope": "global",
+   "edition_scope_src": "https://toysez.com/collections/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant",
+   "form": "vinyl-plush-pendant",
+   "form_src": "https://toysez.com/collections/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant",
+   "released": "2025-04-24",
+   "released_src": "https://toysez.com/collections/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant",
+   "roster_complete": true,
+   "secret_odds": "1/72",
+   "secret_odds_src": "https://toysez.com/products/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant-secret-id1-72",
+   "set_size": 6,
+   "set_size_src": "https://toysez.com/collections/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant",
+   "_body": "Third mainline Labubu blind-box pendant series, often called **V3**. 17cm, tie-dye colourways, one positive quality per figure.\n\n**Colour is deliberately not recorded here.** Sources actively disagree on which emotion wears which colour — one catalog calls Luck yellow, another purple. Because the figures are tie-dyed and no two pulls are identical, colour is a poor identifier for this set. Recording nothing beats recording a coin-flip.\n\n*Source hygiene* — at least one widely-circulated guide to this series lists a figure called \"Courage\", which does not exist in it, and gives the wrong odds. Treat single-source rosters for this set with suspicion.\n",
+   "_kind": "series"
+  },
+  {
+   "node": "series",
+   "id": "labubu-good-luck-to-you",
+   "ip": "labubu",
+   "name_en": "Good Luck To You",
+   "name_en_src": "https://www.popmart.com/th/products/1844/labubu-good-luck-to-you-vinyl-plush-doll-pendant",
+   "name_th": "",
+   "name_zh": "",
+   "edition_scope": "Thailand exclusive",
+   "edition_scope_src": "https://www.popmart.com/th/products/1844/labubu-good-luck-to-you-vinyl-plush-doll-pendant",
+   "form": "vinyl-plush-pendant",
+   "form_src": "https://www.popmart.com/th/products/1844/labubu-good-luck-to-you-vinyl-plush-doll-pendant",
+   "price_thb": 1050,
+   "price_thb_src": "https://www.kickscrew.com/products/pop-mart-the-monsters-labubu-good-luck-to-you-pendant-ppmt-2412-0042",
+   "released": "2024-12-20",
+   "released_src": "https://www.kickscrew.com/products/pop-mart-the-monsters-labubu-good-luck-to-you-pendant-ppmt-2412-0042",
+   "roster_complete": true,
+   "set_size": 1,
+   "set_size_src": "https://www.popmart.com/th/products/1844/labubu-good-luck-to-you-vinyl-plush-doll-pendant",
+   "_body": "A **Thailand-exclusive** release, roughly 17cm, sold at 1,050 baht. Not a blind box — you know what you are buying.\n\nThis is the edition-scope axis doing its work: the same character, bound to one market. A collector in Bangkok and a collector in Berlin are not shopping the same catalogue, and a catalogue that flattens them into one global list is lying to both.\n\nLabubu wears Thai traditional dress with gold ornaments, and it is a **line rather than a single item** — the pendant has a matching canvas bag on the same store.\n\n*No Chinese name exists.* Pop Mart hosts this only on its Thai store. A plausible-looking 祝你好运 circulates in search summaries but appears on no actual page, so it is deliberately absent here.\n\n*Open question* — a separately-titled \"Good Luck To You King Labubu\" appears at some retailers. Whether that is a distinct SKU or a reseller renaming this one is unresolved.\n",
+   "_kind": "series"
+  },
+  {
+   "node": "series",
+   "id": "labubu-have-a-seat",
+   "ip": "labubu",
+   "name_en": "Have a Seat",
+   "name_en_src": "official",
+   "name_th": "",
+   "name_zh": "坐坐派对",
+   "name_zh_src": "https://www.popmart.com/hk/products/1001/the-monsters-%E5%9D%90%E5%9D%90%E6%B4%BE%E5%B0%8D%E6%90%AA%E8%86%A0%E6%AF%9B%E7%B5%A8%E7%9B%B2%E7%9B%92",
+   "edition_scope": "global",
+   "edition_scope_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "form": "vinyl-plush",
+   "form_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "released": "2024-07-12",
+   "released_src": "https://labubu.city/blog/have-a-seat-labubu",
+   "roster_complete": true,
+   "secret_odds": "1/72",
+   "secret_odds_src": "https://www.feltify.com/blogs/all-about-labubu/what-is-the-secret-labubu-have-a-seat",
+   "set_size": 6,
+   "set_size_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "_body": "Six seated figures plus one secret. The line that took Labubu from art-toy shelves to airport queues.\n\nEach regular is identified primarily by colour, which is how collectors actually call them in conversation — \"the green one\" long before \"Ququ\".\n\n*Naming* — the Chinese names came first and the English ones are simply their doubled final syllable: 眼巴巴 becomes Baba, 羞答答 becomes Dada. Read in Chinese they are little emotional states — 委屈屈 is sulky, 甜丝丝 is sweet — and the English names keep the sound while dropping every bit of that meaning. Recording only the English would throw away what the set is actually about.\n",
+   "_kind": "series"
+  },
+  {
+   "node": "series",
+   "id": "molly-carb-lover",
+   "ip": "molly",
+   "name_en": "Carb-Lover",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "name_th": "",
+   "name_zh": "",
+   "edition_scope": "global",
+   "edition_scope_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "form": "figure",
+   "form_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "released": "2024-10-16",
+   "released_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "roster_complete": true,
+   "secret_odds": "1/144",
+   "secret_odds_src": "https://toysez.com/collections/molly-carb-lover-baking-time-series",
+   "set_size": 12,
+   "set_size_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "Twelve bakery figures plus one secret. MOLLY dressed as bread, essentially, and the better for it.\n\n*Naming note* — at least one retailer renders three of these differently (\"Baker or Guard\", \"Balaclava Crescent\"). Two independent catalogs back the spellings used here; the outlier is recorded as an outlier.\n",
+   "_kind": "series"
+  },
+  {
+   "node": "series",
+   "id": "skullpanda-the-sound",
+   "ip": "skullpanda",
+   "name_en": "The Sound",
+   "name_en_src": "official",
+   "name_th": "",
+   "name_zh": "声音系列",
+   "name_zh_src": "https://www.popmart.com/hk/products/991/skullpanda%E8%81%B2%E9%9F%B3%E7%B3%BB%E5%88%97",
+   "edition_scope": "global",
+   "edition_scope_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "form": "figure",
+   "form_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "released": "2024-06-28",
+   "released_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "roster_complete": true,
+   "secret_odds": "1/144",
+   "secret_odds_src": "https://toysez.com/collections/skullpanda-the-sound-series",
+   "set_size": 12,
+   "set_size_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "Twelve figures, each an emotional register. A full case of twelve contains no repeats, which makes this set unusually tractable to complete by the case rather than by the box.\n\n*Structure* — the roster maps cleanly onto Plutchik's wheel of emotions, eight primaries and their intensities. That is a useful integrity check: a roster claiming an emotion outside the wheel is probably wrong.\n",
+   "_kind": "series"
+  }
+ ],
+ "figure": [
+  {
+   "node": "figure",
+   "id": "bie-happiness",
+   "ip": "labubu",
+   "series": "labubu-big-into-energy",
+   "pull": "regular",
+   "name_en": "Happiness",
+   "name_en_src": "https://toysez.com/collections/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "bie-hope",
+   "ip": "labubu",
+   "series": "labubu-big-into-energy",
+   "pull": "regular",
+   "name_en": "Hope",
+   "name_en_src": "https://toysez.com/collections/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "bie-id",
+   "ip": "labubu",
+   "series": "labubu-big-into-energy",
+   "pull": "secret",
+   "name_en": "ID",
+   "name_en_src": "https://toysez.com/products/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant-secret-id1-72",
+   "note": "Grey-furred, with rainbow-gradient glitter eyes and rainbow teeth. Earlier reports of a \"rainbow-eyed\" secret and a \"grey edition\" describe this one figure, not two.",
+   "note_src": "https://toysez.com/products/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant-secret-id1-72",
+   "odds": "1/72",
+   "odds_src": "https://toysez.com/products/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant-secret-id1-72",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "bie-love",
+   "ip": "labubu",
+   "series": "labubu-big-into-energy",
+   "pull": "regular",
+   "name_en": "Love",
+   "name_en_src": "https://toysez.com/collections/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "bie-loyalty",
+   "ip": "labubu",
+   "series": "labubu-big-into-energy",
+   "pull": "regular",
+   "name_en": "Loyalty",
+   "name_en_src": "https://toysez.com/collections/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "bie-luck",
+   "ip": "labubu",
+   "series": "labubu-big-into-energy",
+   "pull": "regular",
+   "name_en": "Luck",
+   "name_en_src": "https://toysez.com/collections/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "bie-serenity",
+   "ip": "labubu",
+   "series": "labubu-big-into-energy",
+   "pull": "regular",
+   "name_en": "Serenity",
+   "name_en_src": "https://toysez.com/collections/labubu-the-monsters-big-into-energy-series-vinyl-plush-pendant",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-afternoon-tea",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "regular",
+   "name_en": "Afternoon Tea",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-baker-or-gardener",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "regular",
+   "name_en": "Baker or Gardener",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-crocodile-bread",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "regular",
+   "name_en": "Crocodile Bread",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-croissant-balaclava",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "regular",
+   "name_en": "Croissant Balaclava",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-elegant-waffle",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "regular",
+   "name_en": "Elegant Waffle",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-heart-to-heart-toast",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "regular",
+   "name_en": "Heart to Heart Toast",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-lets-go-hot-dog",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "regular",
+   "name_en": "Let's Go Hot Dog",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-pick-a-boo-burger",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "regular",
+   "name_en": "Pick-a-Boo Burger",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-pretend-bear-bread",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "secret",
+   "name_en": "Pretend Bear Bread",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "odds": "1/144",
+   "odds_src": "https://toysez.com/collections/molly-carb-lover-baking-time-series",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-soft-punch",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "regular",
+   "name_en": "Soft Punch",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-sweet-ballet",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "regular",
+   "name_en": "Sweet Ballet",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-taiyaki-princess",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "regular",
+   "name_en": "Taiyaki Princess",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "carb-yummy-bread-shoes",
+   "ip": "molly",
+   "series": "molly-carb-lover",
+   "pull": "regular",
+   "name_en": "Yummy Bread Shoes",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/molly/carb+lover-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-baby-blonde",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "regular",
+   "name_en": "Baby Blonde",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-baby-brown",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "regular",
+   "name_en": "Baby Brown",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-duck-you",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "regular",
+   "name_en": "Duck You",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-heartless-girl",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "regular",
+   "name_en": "Heartless Girl",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-ill-bring-you-a-flower",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "regular",
+   "name_en": "I'll Bring You A Flower",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-ill-give-you-all-my-love",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "regular",
+   "name_en": "I'll Give You All My Love",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-love-is-love",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "regular",
+   "name_en": "Love is Love",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-love-makes-us-cry",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "regular",
+   "name_en": "Love Makes Us Cry",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-queen-broken-heart",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "secret",
+   "name_en": "The Queen of Broken Heart",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "note": "The set's super secret — twice as rare as its two siblings.",
+   "note_src": "https://toysez.com/collections/crybaby-crying-again-series",
+   "odds": "1/288",
+   "odds_src": "https://toysez.com/collections/crybaby-crying-again-series",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-robber-red",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "secret",
+   "name_en": "The Robber Red Ver.",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "note": "Earlier community reports put this at 1/288. That number belongs to The Queen of Broken Heart, the set's third and rarest secret.",
+   "note_src": "https://toysez.com/collections/crybaby-crying-again-series",
+   "odds": "1/144",
+   "odds_src": "https://toysez.com/collections/crybaby-crying-again-series",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-shes-alice-halloween",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "secret",
+   "name_en": "She's Alice Halloween Ver.",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "odds": "1/144",
+   "odds_src": "https://toysez.com/collections/crybaby-crying-again-series",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-shes-alice",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "regular",
+   "name_en": "She's Alice",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-star-boy",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "regular",
+   "name_en": "Star Boy",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-the-robber",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "regular",
+   "name_en": "The Robber",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cry-what-a-frog",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again",
+   "pull": "regular",
+   "name_en": "What A Frog",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cryp-baby-blonde",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again-plush",
+   "pull": "secret",
+   "name_en": "Baby Blonde",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "note": "A secret in the plush line, but an ordinary regular in the figures line of the same name.",
+   "note_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cryp-baby-brown",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again-plush",
+   "pull": "secret",
+   "name_en": "Baby Brown",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "note": "A secret in the plush line, but an ordinary regular in the figures line of the same name.",
+   "note_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cryp-duck-you",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again-plush",
+   "pull": "regular",
+   "name_en": "Duck You",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cryp-ill-bring-you-a-flower",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again-plush",
+   "pull": "regular",
+   "name_en": "I'll Bring You A Flower",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cryp-ill-give-you-all-my-love",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again-plush",
+   "pull": "regular",
+   "name_en": "I'll Give You All My Love",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cryp-love-makes-us-cry",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again-plush",
+   "pull": "regular",
+   "name_en": "Love Makes Us Cry",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cryp-shes-alice",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again-plush",
+   "pull": "regular",
+   "name_en": "She's Alice",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "cryp-what-a-frog",
+   "ip": "crybaby",
+   "series": "crybaby-crying-again-plush",
+   "pull": "regular",
+   "name_en": "What A Frog",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/crybaby/crying-again-vinyl-face-plush-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "glty-labubu",
+   "ip": "labubu",
+   "series": "labubu-good-luck-to-you",
+   "pull": "regular",
+   "name_en": "Good Luck To You",
+   "name_en_src": "https://www.kickscrew.com/products/pop-mart-the-monsters-labubu-good-luck-to-you-pendant-ppmt-2412-0042",
+   "note": "Sold openly, not as a blind box.",
+   "note_src": "https://www.kickscrew.com/products/pop-mart-the-monsters-labubu-good-luck-to-you-pendant-ppmt-2412-0042",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "hs-baba",
+   "ip": "labubu",
+   "series": "labubu-have-a-seat",
+   "pull": "regular",
+   "name_en": "Baba",
+   "name_en_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "name_zh": "眼巴巴",
+   "name_zh_src": "https://m.hupu.com/score-list/common_first/2097984",
+   "color": "brown",
+   "color_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "contested": true,
+   "name_pairing_src": "inference",
+   "note": "Colour is contested: English sources say brown, the Chinese listing says golden-brown. Unresolved.",
+   "note_src": "https://blindboxradar.com/dada-labubu-have-a-seat/ | https://miniapp.wuyaw.com/goods/_dmesoh0evoLgLiT4RabpMpNWDHMJOvysNcrcOLw",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "hs-dada",
+   "ip": "labubu",
+   "series": "labubu-have-a-seat",
+   "pull": "regular",
+   "name_en": "Dada",
+   "name_en_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "name_zh": "羞答答",
+   "name_zh_src": "https://m.hupu.com/score-list/common_first/2097984",
+   "color": "pink",
+   "color_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "name_pairing_src": "inference",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "hs-duoduo",
+   "ip": "labubu",
+   "series": "labubu-have-a-seat",
+   "pull": "secret",
+   "name_en": "Duoduo",
+   "name_en_src": "https://www.feltify.com/blogs/all-about-labubu/what-is-the-secret-labubu-have-a-seat",
+   "name_zh": "趣多多",
+   "name_zh_src": "https://m.hupu.com/score-list/common_first/2097984",
+   "color": "chestnut",
+   "color_src": "https://miniapp.wuyaw.com/goods/_dmesoh0evoLgLiT4RabpMpNWDHMJOvysNcrcOLw",
+   "name_pairing_src": "inference",
+   "note": "Red nose and an extra sparkle in the finish. Stated as 1.4% per box. The 1/72 figure is retailer-disclosed (JD and collector catalogs agree); Pop Mart's own page says only that odds vary by set.",
+   "note_src": "https://www.feltify.com/blogs/all-about-labubu/what-is-the-secret-labubu-have-a-seat",
+   "odds": "1/72",
+   "odds_src": "https://www.feltify.com/blogs/all-about-labubu/what-is-the-secret-labubu-have-a-seat",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "hs-hehe",
+   "ip": "labubu",
+   "series": "labubu-have-a-seat",
+   "pull": "regular",
+   "name_en": "Hehe",
+   "name_en_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "name_zh": "乐呵呵",
+   "name_zh_src": "https://m.hupu.com/score-list/common_first/2097984",
+   "color": "gray",
+   "color_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "name_pairing_src": "inference",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "hs-ququ",
+   "ip": "labubu",
+   "series": "labubu-have-a-seat",
+   "pull": "regular",
+   "name_en": "Ququ",
+   "name_en_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "name_zh": "委屈屈",
+   "name_zh_src": "https://m.hupu.com/score-list/common_first/2097984",
+   "color": "green",
+   "color_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "name_pairing_src": "inference",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "hs-sisi",
+   "ip": "labubu",
+   "series": "labubu-have-a-seat",
+   "pull": "regular",
+   "name_en": "Sisi",
+   "name_en_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "name_zh": "甜丝丝",
+   "name_zh_src": "https://m.hupu.com/score-list/common_first/2097984",
+   "color": "yellow",
+   "color_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "contested": true,
+   "name_pairing_src": "inference",
+   "note": "Colour is contested: English sources say yellow, the Chinese listing says cream-yellow. Unresolved.",
+   "note_src": "https://blindboxradar.com/dada-labubu-have-a-seat/ | https://miniapp.wuyaw.com/goods/_dmesoh0evoLgLiT4RabpMpNWDHMJOvysNcrcOLw",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "hs-zizi",
+   "ip": "labubu",
+   "series": "labubu-have-a-seat",
+   "pull": "regular",
+   "name_en": "Zizi",
+   "name_en_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "name_zh": "美滋滋",
+   "name_zh_src": "https://m.hupu.com/score-list/common_first/2097984",
+   "color": "blue",
+   "color_src": "https://blindboxradar.com/dada-labubu-have-a-seat/",
+   "contested": true,
+   "name_pairing_src": "inference",
+   "note": "Colour is contested: English sources say blue, the Chinese listing says purple. Unresolved.",
+   "note_src": "https://blindboxradar.com/dada-labubu-have-a-seat/ | https://miniapp.wuyaw.com/goods/_dmesoh0evoLgLiT4RabpMpNWDHMJOvysNcrcOLw",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-equilibrium",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "secret",
+   "name_en": "The Equilibrium",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "odds": "1/144",
+   "odds_src": "https://toysez.com/collections/skullpanda-the-sound-series",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-the-admiration",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "regular",
+   "name_en": "The Admiration",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-the-anger",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "regular",
+   "name_en": "The Anger",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-the-awe",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "regular",
+   "name_en": "The Awe",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-the-disgust",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "regular",
+   "name_en": "The Disgust",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-the-ecstasy",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "regular",
+   "name_en": "The Ecstasy",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-the-grief",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "regular",
+   "name_en": "The Grief",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-the-joy",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "regular",
+   "name_en": "The Joy",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-the-pensiveness",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "regular",
+   "name_en": "The Pensiveness",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-the-serenity",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "regular",
+   "name_en": "The Serenity",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-the-terror",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "regular",
+   "name_en": "The Terror",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-the-trust",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "regular",
+   "name_en": "The Trust",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "",
+   "_kind": "figure"
+  },
+  {
+   "node": "figure",
+   "id": "sound-the-vigilance",
+   "ip": "skullpanda",
+   "series": "skullpanda-the-sound",
+   "pull": "regular",
+   "name_en": "The Vigilance",
+   "name_en_src": "https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/",
+   "_body": "",
+   "_kind": "figure"
+  }
+ ],
+ "gaps": [
+  {
+   "scope": "series",
+   "url": "/series/crybaby-crying-again-plush/",
+   "what": "Crying Again Vinyl Face Plush — no release date",
+   "why": "date not researched"
+  },
+  {
+   "scope": "series",
+   "url": "/series/crybaby-crying-again-plush/",
+   "what": "Crying Again Vinyl Face Plush — no TH name",
+   "why": "series name not recorded in this language"
+  },
+  {
+   "scope": "series",
+   "url": "/series/crybaby-crying-again/",
+   "what": "Crying Again — no TH name",
+   "why": "series name not recorded in this language"
+  },
+  {
+   "scope": "series",
+   "url": "/series/labubu-big-into-energy/",
+   "what": "Big into Energy — no TH name",
+   "why": "series name not recorded in this language"
+  },
+  {
+   "scope": "series",
+   "url": "/series/labubu-good-luck-to-you/",
+   "what": "Good Luck To You — no TH name",
+   "why": "series name not recorded in this language"
+  },
+  {
+   "scope": "series",
+   "url": "/series/labubu-good-luck-to-you/",
+   "what": "Good Luck To You — no ZH name",
+   "why": "series name not recorded in this language"
+  },
+  {
+   "scope": "series",
+   "url": "/series/labubu-have-a-seat/",
+   "what": "Have a Seat — no TH name",
+   "why": "series name not recorded in this language"
+  },
+  {
+   "scope": "series",
+   "url": "/series/molly-carb-lover/",
+   "what": "Carb-Lover — no TH name",
+   "why": "series name not recorded in this language"
+  },
+  {
+   "scope": "series",
+   "url": "/series/molly-carb-lover/",
+   "what": "Carb-Lover — no ZH name",
+   "why": "series name not recorded in this language"
+  },
+  {
+   "scope": "series",
+   "url": "/series/skullpanda-the-sound/",
+   "what": "The Sound — no TH name",
+   "why": "series name not recorded in this language"
+  },
+  {
+   "scope": "ip",
+   "url": "/ip/crybaby/",
+   "what": "CRYBABY — no TH name",
+   "why": "character name not recorded in this language"
+  },
+  {
+   "scope": "ip",
+   "url": "/ip/molly/",
+   "what": "MOLLY — no TH name",
+   "why": "character name not recorded in this language"
+  },
+  {
+   "scope": "ip",
+   "url": "/ip/skullpanda/",
+   "what": "SKULLPANDA — no TH name",
+   "why": "character name not recorded in this language"
+  },
+  {
+   "scope": "ip",
+   "url": "/ip/skullpanda/",
+   "what": "SKULLPANDA — no ZH name",
+   "why": "character name not recorded in this language"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/bie-happiness/",
+   "what": "Happiness — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/bie-hope/",
+   "what": "Hope — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/bie-love/",
+   "what": "Love — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/bie-loyalty/",
+   "what": "Loyalty — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/bie-luck/",
+   "what": "Luck — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/bie-serenity/",
+   "what": "Serenity — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/carb-afternoon-tea/",
+   "what": "Afternoon Tea — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/carb-baker-or-gardener/",
+   "what": "Baker or Gardener — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/carb-crocodile-bread/",
+   "what": "Crocodile Bread — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/carb-croissant-balaclava/",
+   "what": "Croissant Balaclava — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/carb-elegant-waffle/",
+   "what": "Elegant Waffle — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/carb-heart-to-heart-toast/",
+   "what": "Heart to Heart Toast — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/carb-lets-go-hot-dog/",
+   "what": "Let's Go Hot Dog — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/carb-pick-a-boo-burger/",
+   "what": "Pick-a-Boo Burger — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/carb-soft-punch/",
+   "what": "Soft Punch — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/carb-sweet-ballet/",
+   "what": "Sweet Ballet — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/carb-taiyaki-princess/",
+   "what": "Taiyaki Princess — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/carb-yummy-bread-shoes/",
+   "what": "Yummy Bread Shoes — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cry-baby-blonde/",
+   "what": "Baby Blonde — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cry-baby-brown/",
+   "what": "Baby Brown — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cry-duck-you/",
+   "what": "Duck You — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cry-heartless-girl/",
+   "what": "Heartless Girl — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cry-ill-bring-you-a-flower/",
+   "what": "I'll Bring You A Flower — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cry-ill-give-you-all-my-love/",
+   "what": "I'll Give You All My Love — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cry-love-is-love/",
+   "what": "Love is Love — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cry-love-makes-us-cry/",
+   "what": "Love Makes Us Cry — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cry-shes-alice/",
+   "what": "She's Alice — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cry-star-boy/",
+   "what": "Star Boy — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cry-the-robber/",
+   "what": "The Robber — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cry-what-a-frog/",
+   "what": "What A Frog — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cryp-duck-you/",
+   "what": "Duck You — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cryp-ill-bring-you-a-flower/",
+   "what": "I'll Bring You A Flower — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cryp-ill-give-you-all-my-love/",
+   "what": "I'll Give You All My Love — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cryp-love-makes-us-cry/",
+   "what": "Love Makes Us Cry — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cryp-shes-alice/",
+   "what": "She's Alice — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/cryp-what-a-frog/",
+   "what": "What A Frog — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/glty-labubu/",
+   "what": "Good Luck To You — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/hs-baba/",
+   "what": "Baba — sources disagree",
+   "why": "recorded as contested; needs an official sheet"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/hs-baba/",
+   "what": "Baba — EN/ZH pairing is inferred",
+   "why": "the phonetic pattern is exact, but no source lists both names together"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/hs-dada/",
+   "what": "Dada — EN/ZH pairing is inferred",
+   "why": "the phonetic pattern is exact, but no source lists both names together"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/hs-duoduo/",
+   "what": "Duoduo — EN/ZH pairing is inferred",
+   "why": "the phonetic pattern is exact, but no source lists both names together"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/hs-hehe/",
+   "what": "Hehe — EN/ZH pairing is inferred",
+   "why": "the phonetic pattern is exact, but no source lists both names together"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/hs-ququ/",
+   "what": "Ququ — EN/ZH pairing is inferred",
+   "why": "the phonetic pattern is exact, but no source lists both names together"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/hs-sisi/",
+   "what": "Sisi — sources disagree",
+   "why": "recorded as contested; needs an official sheet"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/hs-sisi/",
+   "what": "Sisi — EN/ZH pairing is inferred",
+   "why": "the phonetic pattern is exact, but no source lists both names together"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/hs-zizi/",
+   "what": "Zizi — sources disagree",
+   "why": "recorded as contested; needs an official sheet"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/hs-zizi/",
+   "what": "Zizi — EN/ZH pairing is inferred",
+   "why": "the phonetic pattern is exact, but no source lists both names together"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/sound-the-admiration/",
+   "what": "The Admiration — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/sound-the-anger/",
+   "what": "The Anger — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/sound-the-awe/",
+   "what": "The Awe — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/sound-the-disgust/",
+   "what": "The Disgust — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/sound-the-ecstasy/",
+   "what": "The Ecstasy — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/sound-the-grief/",
+   "what": "The Grief — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/sound-the-joy/",
+   "what": "The Joy — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/sound-the-pensiveness/",
+   "what": "The Pensiveness — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/sound-the-serenity/",
+   "what": "The Serenity — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/sound-the-terror/",
+   "what": "The Terror — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/sound-the-trust/",
+   "what": "The Trust — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "figure",
+   "url": "/figure/sound-the-vigilance/",
+   "what": "The Vigilance — no colour recorded",
+   "why": "regular figures are identified by colour in conversation"
+  },
+  {
+   "scope": "ip",
+   "url": "/ip/crybaby/",
+   "what": "CRYBABY — ZH name is a nickname",
+   "why": "media usage, not a Pop Mart product name"
+  },
+  {
+   "scope": "ip",
+   "url": "/ip/labubu/",
+   "what": "Labubu — artist's ZH name varies",
+   "why": "sources give different characters for the same name"
+  }
+ ]
+}
