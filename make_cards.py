@@ -143,6 +143,9 @@ def build_cards(ips, series, figures):
     card(os.path.join(OUT, "iso.png"), "In Search Of", "open questions",
          "What this catalogue does not know yet.")
     n += 1
+    card(os.path.join(OUT, "shelf.png"), "My Shelf", "collection",
+         "What you have, what you seek, and a card to trade with.")
+    n += 1
 
     for i in ips:
         card(os.path.join(OUT, "ip-%s.png" % i["id"]),

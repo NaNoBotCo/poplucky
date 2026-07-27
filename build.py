@@ -13,6 +13,8 @@ import re
 import shutil
 import sys
 
+import shelf as _shelf
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 VAULT = os.path.join(ROOT, "vault")
 OUT = os.path.join(ROOT, "docs")
@@ -79,6 +81,8 @@ UI = {
                "所有角色与系列名称归其创作者所有，此处仅用于指称。"),
     },
 }
+
+UI.update(_shelf.SHELF_UI)
 
 FALLBACK_NOTE = {"en": "", "th": " ", "zh": " "}
 
@@ -543,12 +547,13 @@ def page(title, lang_neutral_title, body, desc, path, crumbs=None, extra_head=""
 <meta property="og:site_name" content="Poplucky">
 <meta name="twitter:card" content="summary_large_image">
 {extra_head}
-<style>{css}</style>
+<style>{css}{shelfcss}</style>
 </head>
 <body>
 <div class="wrap">
 <header class="top">
   <a class="logo" href="/"><span class="b">\U0001f381</span> Poplucky</a>
+  <a class="shelfnav" href="/shelf/">{shelfword}<span class="badge"></span></a>
   <div class="langs">{langbar}</div>
 </header>
 {crumb}
@@ -558,12 +563,14 @@ def page(title, lang_neutral_title, body, desc, path, crumbs=None, extra_head=""
 <footer>{foot}</footer>
 </div>
 <script>{js}</script>
+<script>{shelfjs}</script>
 </body>
 </html>
 """.format(title=html.escape(title), desc=html.escape(desc), canon=canon,
            ogtitle=html.escape(lang_neutral_title), css=CSS, js=JS,
            langbar=langbar, crumb=crumb_html, body=body, foot=foot,
-           extra_head=extra_head)
+           extra_head=extra_head, shelfcss=_shelf.SHELF_CSS,
+           shelfjs=_shelf.SHELF_JS, shelfword=ui_span("shelf"))
 
     d = os.path.join(OUT, path.strip("/"))
     os.makedirs(d, exist_ok=True)
@@ -588,13 +595,23 @@ def fig_card(f):
     meta = html.escape(str(f.get("color", "") or ""))
     if odds:
         meta = (meta + " · " if meta else "") + html.escape(str(odds))
+    ctl = (
+        '<div class="ctl">'
+        '<button data-act="dec" aria-label="one fewer">\u2212</button>'
+        '<span class="cnt zero">0</span>'
+        '<button data-act="inc" aria-label="one more">+</button>'
+        '<button class="wish" data-act="wish" aria-pressed="false" '
+        'aria-label="seeking">\u2661</button>'
+        "</div>"
+    )
     return (
-        '<li><a class="%s" href="/figure/%s/">%s'
+        '<li class="%s shelf-item" data-id="%s">%s'
+        '<a class="card-link" href="/figure/%s/">'
         '<span class="fname">%s</span>'
-        '<span class="meta">%s</span>'
-        '<span class="%s">%s</span></a></li>'
-        % (cls, f["id"], sw, name_span(f), meta or "&nbsp;", pill_cls,
-           ui_span(pill_key))
+        '<span class="meta">%s</span></a>'
+        '<span class="%s">%s</span>%s</li>'
+        % (cls, f["id"], sw, f["id"], name_span(f), meta or "&nbsp;",
+           pill_cls, ui_span(pill_key), ctl)
     )
 
 
@@ -715,6 +732,20 @@ def build():
                       % (ui_span("contested"), html.escape(str(f.get("note", "")))))
         elif f.get("note"):
             notice = '<div class="note">%s</div>' % html.escape(str(f["note"]))
+        solo = (
+            '<div class="shelfsolo shelf-item" data-id="%s">'
+            '<span class="lbl">%s</span>'
+            '<div class="ctl">'
+            '<button data-act="dec" aria-label="one fewer">\u2212</button>'
+            '<span class="cnt zero">0</span>'
+            '<button data-act="inc" aria-label="one more">+</button>'
+            '<button class="wish" data-act="wish" aria-pressed="false" '
+            'aria-label="seeking">\u2661</button>'
+            "</div>"
+            '<span class="mine">%s \u2713</span>'
+            "</div>"
+            % (f["id"], ui_span("have"), ui_span("on_shelf"))
+        )
         where = (
             '<ul class="dir"><li><a href="/series/%s/">%s</a></li>'
             '<li><a href="/ip/%s/">%s</a></li></ul>'
@@ -727,6 +758,7 @@ def build():
                 "secret" if f.get("pull") == "secret" else "regular")
             + ('<ul class="facts">%s</ul>' % "".join(facts) if facts else "")
             + notice
+            + solo
             + "<h2>%s</h2>%s" % (ui_span("where"), where)
             + prov_table(f, "en")
         )
@@ -737,6 +769,11 @@ def build():
                                 s.get("name_en", "")),
              "/figure/%s/" % f["id"], crumbs=[("home", "/")],
              card="figure-%s.png" % f["id"])
+
+    # ---- My Shelf --------------------------------------------------------
+    page("My Shelf — Poplucky", "My Shelf", _shelf.shelf_body(ui_span),
+         "Track what you have, what you are seeking, and make a trade card.",
+         "/shelf/", crumbs=[("home", "/")], card="shelf.png")
 
     # ---- In Search Of ----------------------------------------------------
     rows = "".join(
@@ -757,7 +794,7 @@ def build():
     with open(os.path.join(OUT, "catalog.json"), "w", encoding="utf-8") as f:
         json.dump(dict(ip=ips, series=series, figure=figures, gaps=gaps),
                   f, ensure_ascii=False, indent=1, default=str)
-    urls = ["/", "/iso/"] + ["/ip/%s/" % i["id"] for i in ips] + \
+    urls = ["/", "/iso/", "/shelf/"] + ["/ip/%s/" % i["id"] for i in ips] + \
            ["/series/%s/" % s["id"] for s in series] + \
            ["/figure/%s/" % f["id"] for f in figures]
     with open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8") as f:

@@ -38,6 +38,7 @@ python3 -m http.server 8765 --directory docs
 | `vault/series/` | Releases — Have a Seat, Big into Energy, The Sound… |
 | `vault/figure/` | Individual figures, regular and secret |
 | `build.py` | vault → docs. Also emits catalog.json, sitemap, CNAME. |
+| `shelf.py` | Phase 1 — shelf CSS/JS and the trade-card canvas. |
 | `make_cards.py` | og:image per page, into `docs/cards/` |
 | `seed_vault.py` | One-time initial import. Historical after seeding. |
 | `docs/` | Build output. **Wiped every build — never hand-place files here.** |
@@ -69,6 +70,35 @@ Chinese *series* names are the exception and are properly official: Pop Mart's
 HK/MO/TH storefronts put the Chinese title in the product URL, and the same
 numeric product ID serves both the Chinese and English titles. That ID match is
 what proves 眼泪工厂系列 == "Crying Again" — a renaming, not a translation.
+
+## My Shelf (Phase 1)
+
+Account-free by design. State lives in `localStorage` under `poplucky.shelf.v1`
+as `{figureId: {n: <how many you own>, w: <seeking?>}}`. Nothing is sent
+anywhere, so **Back up the shelf** on `/shelf/` writes a JSON file and
+**Restore** reads one back — that is the whole recovery story, and the page
+says so plainly rather than pretending the data is safe.
+
+Controls sit on every figure card and on each figure's own page: `−` / count /
+`+`, plus a heart for seeking. Owning something clears seeking it, and the
+heart is disabled while you own one — otherwise a trade card could offer and
+request the same figure in the same breath. The first copy of anything gets a
+small pop and a burst of sparkles, suppressed under `prefers-reduced-motion`.
+
+`/shelf/` totals what you have, shows per-set completion bars, and lists your
+doubles and your seeking list. Numbers on doubles are **spares** (own 3, offer
+2) because that is what a trade post means by a count.
+
+### Trade cards
+
+The point of the phase. Doubles and seeking compose into a 1200×630 card drawn
+in a browser canvas, saveable as PNG or copyable as plain text for chat. It is
+a flyer for the Facebook groups and Discords where trading already happens —
+Poplucky hosts no trades, takes no cut, and sees none of it.
+
+Drawing in canvas rather than Pillow means **Thai and Chinese shape correctly**
+on trade cards, unlike the og:image cards. Same reason: the browser has a real
+text engine.
 
 ## Deliberately out of scope
 

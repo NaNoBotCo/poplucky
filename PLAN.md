@@ -43,7 +43,9 @@ Locale = **language × market**, not just translated UI. A Thai reader sees Thai
 
 *Built on stdlib Python → static HTML, not Astro+Tailwind as specified below — matching mot-dang/wichaa/defiant. One less toolchain; the vault-canonical pattern is unchanged.*
 
-**Phase 1 — My Shelf.** Collection tracker: localStorage-first, zero accounts. Mark owned/wished/dupe per variant. The delight: marking a figure owned plays a box-opening reveal animation. Dupes auto-compose a **trade card** — a beautiful shareable ISO/FT image ("have these / seeking these", bilingual) for the FB groups and Discords where trading already happens. We host no marketplace; we make the flyer.
+**Phase 1 — My Shelf. ✅ BUILT 2026-07-27.** localStorage `poplucky.shelf.v1`, no accounts, backup/restore JSON. Controls on every card and figure page; owning clears seeking (a trade card must never offer and request the same figure). `/shelf/` = tallies, per-set completion bars, doubles, seeking. Trade card drawn in canvas at 1200×630 — PNG or plain text — so **Thai and Chinese shape correctly**, unlike the Pillow og:images. Verified in EN/TH/ZH.
+
+*Original wording:* Collection tracker: localStorage-first, zero accounts. Mark owned/wished/dupe per variant. The delight: marking a figure owned plays a box-opening reveal animation. Dupes auto-compose a **trade card** — a beautiful shareable ISO/FT image ("have these / seeking these", bilingual) for the FB groups and Discords where trading already happens. We host no marketplace; we make the flyer.
 
 **Phase 2 — the odds toolkit.** Set-completion calculator (box price, case size, disclosed secret odds → expected cost to finish, dupe-count distribution), gift-wishlist links, series completion meters.
 

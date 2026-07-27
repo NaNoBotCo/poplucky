@@ -1,168 +1,80 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Vigilance — The Sound — Poplucky</title>
-<meta name="description" content="The Vigilance, regular in The Sound.">
-<link rel="canonical" href="https://poplucky.com/figure/sound-the-vigilance/">
-<meta property="og:title" content="The Vigilance">
-<meta property="og:description" content="The Vigilance, regular in The Sound.">
-<meta property="og:url" content="https://poplucky.com/figure/sound-the-vigilance/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Poplucky">
-<meta name="twitter:card" content="summary_large_image">
+# -*- coding: utf-8 -*-
+"""
+shelf.py — Phase 1. The collector's own shelf.
 
-<meta property="og:image" content="https://poplucky.com/cards/figure-sound-the-vigilance.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:image" content="https://poplucky.com/cards/figure-sound-the-vigilance.png">
-<style>
-:root{
-  --bg:#fbf7f4; --ink:#241f2b; --dim:#6b6377; --line:#e6ddd6;
-  --card:rgba(255,255,255,.62); --card-solid:#fffdfc;
-  --pink:#ff6fa5; --grape:#7b5cff;
-  --gold:#f7b32b; --mint:#3ecfae; --shadow:0 10px 30px rgba(60,40,80,.10);
-  --r:18px;
-}
-@media (prefers-color-scheme:dark){
-  :root{--bg:#17141d; --ink:#f3eef7; --dim:#a89fb6; --line:#2e2739;
-        --card:rgba(44,38,56,.55); --card-solid:#241f2e;
-        --shadow:0 10px 34px rgba(0,0,0,.45);}
-}
-*{box-sizing:border-box}
-/* The wash lives on a fixed layer rather than on body: a background painted on
-   body is sized to the content box, so short pages got a hard-edged blob. */
-body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-  background:
-   radial-gradient(120vw 90vh at 8% -14%, rgba(255,111,165,.20), transparent 70%),
-   radial-gradient(110vw 85vh at 96% 6%, rgba(123,92,255,.19), transparent 70%),
-   radial-gradient(100vw 70vh at 50% 108%, rgba(62,207,174,.13), transparent 70%);}
-body{margin:0;min-height:100vh;background:var(--bg);
-  color:var(--ink);font:17px/1.65 ui-rounded,"Hiragino Maru Gothic ProN",
-  -apple-system,"Noto Sans Thai","Noto Sans SC",system-ui,sans-serif;
-  -webkit-font-smoothing:antialiased;}
-.wrap{max-width:1040px;margin:0 auto;padding:0 22px 90px}
-a{color:inherit}
-header.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;
-  padding:22px 0 10px}
-.logo{font-weight:800;font-size:1.45rem;letter-spacing:-.02em;
-  text-decoration:none;display:inline-flex;align-items:center;gap:9px}
-.logo .b{display:inline-block;transition:transform .35s cubic-bezier(.34,1.8,.5,1)}
-.logo:hover .b{transform:translateY(-4px) rotate(-9deg) scale(1.12)}
-.langs{margin-left:auto;display:flex;gap:6px}
-.langs button{font:inherit;font-size:.82rem;font-weight:700;cursor:pointer;
-  border:1px solid var(--line);background:var(--card);color:var(--dim);
-  padding:5px 12px;border-radius:999px;backdrop-filter:blur(8px);
-  transition:transform .16s,color .16s,border-color .16s}
-.langs button:hover{transform:translateY(-2px)}
-.langs button[aria-pressed=true]{color:var(--ink);border-color:var(--pink);
-  box-shadow:0 0 0 3px rgba(255,111,165,.16)}
-.crumb{font-size:.83rem;color:var(--dim);padding:6px 0 0}
-.crumb a{text-decoration:none;border-bottom:1px solid var(--line)}
-h1{font-size:2.3rem;line-height:1.14;letter-spacing:-.025em;margin:.35em 0 .12em}
-h2{font-size:1.06rem;letter-spacing:.09em;text-transform:uppercase;
-  color:var(--dim);margin:2.4em 0 .7em;font-weight:750}
-.tag{color:var(--dim);font-size:1.03rem;margin:.2em 0 1.3em;max-width:60ch}
-/* directory-genre listing */
-.dir{margin:0;padding:0;list-style:none;
-  columns:2;column-gap:34px}
-@media(max-width:640px){.dir{columns:1}}
-.dir li{break-inside:avoid;padding:5px 0;font-size:1.04rem}
-.dir a{text-decoration:none;border-bottom:1.5px solid transparent;
-  transition:border-color .18s,color .18s}
-.dir a:hover{border-bottom-color:var(--pink)}
-.n{color:var(--dim);font-size:.86em}
-.sub{margin:2px 0 8px 16px;padding:0;list-style:none;font-size:.94rem}
-.sub li{padding:2px 0}
-.sub a{color:var(--dim)}
-.sub a:hover{color:var(--ink)}
-/* cards */
-.grid{display:grid;gap:15px;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));
-  margin:14px 0 0;padding:0;list-style:none}
-.card{position:relative;display:block;text-decoration:none;padding:17px 16px 15px;
-  border:1px solid var(--line);border-radius:var(--r);background:var(--card);
-  backdrop-filter:blur(11px);box-shadow:var(--shadow);overflow:hidden;
-  transition:transform .2s cubic-bezier(.34,1.6,.5,1),box-shadow .2s}
-.card:hover{transform:translateY(-5px) scale(1.022);
-  box-shadow:0 16px 40px rgba(60,40,80,.17)}
-.card:active{transform:translateY(-1px) scale(.985)}
-.card .fname{font-weight:750;font-size:1.1rem;display:block}
-.card .meta{color:var(--dim);font-size:.83rem;margin-top:3px;display:block}
-.swatch{position:absolute;inset:0 auto 0 0;width:5px}
-/* secret = chase = holo foil. Opaque fill so the type stays legible;
-   the iridescence lives in the border and a faint wash. */
-.card.secret{border:2px solid transparent;
-  background:linear-gradient(var(--card-solid),var(--card-solid)) padding-box,
-    linear-gradient(115deg,var(--gold),var(--pink),var(--grape),var(--mint),var(--gold))
-    border-box}
-.card.secret::before{content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(135deg,rgba(247,179,43,.16),rgba(255,111,165,.14) 34%,
-    rgba(123,92,255,.14) 64%,rgba(62,207,174,.16));}
-.card.secret::after{content:"";position:absolute;top:0;left:-130%;width:55%;
-  height:100%;pointer-events:none;
-  background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),
-  transparent);animation:sheen 4.6s ease-in-out infinite}
-.card.secret .fname,.card.secret .meta,.card.secret .pill{position:relative;z-index:1}
-@keyframes sheen{0%,72%{left:-130%}100%{left:170%}}
-.pill{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.07em;
-  text-transform:uppercase;padding:2px 9px;border-radius:999px;
-  background:rgba(247,179,43,.18);color:#a5730a;margin-top:8px}
-@media (prefers-color-scheme:dark){.pill{color:var(--gold)}}
-.pill.reg{background:rgba(123,92,255,.14);color:var(--grape)}
-@media (prefers-color-scheme:dark){.pill.reg{color:#b9a5ff}}
-/* notices */
-.note{border:1px solid var(--line);border-left:4px solid var(--gold);
-  border-radius:12px;padding:13px 16px;background:var(--card);margin:18px 0;
-  font-size:.95rem}
-.note.contested{border-left-color:var(--pink)}
-.note b{letter-spacing:.02em}
-/* provenance table */
-.prov table{width:100%;border-collapse:collapse;font-size:.92rem;
-  background:var(--card);border:1px solid var(--line);border-radius:12px;
-  overflow:hidden}
-.prov th,.prov td{text-align:left;padding:9px 13px;border-bottom:1px solid var(--line);
-  vertical-align:top}
-.prov thead th{font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;
-  color:var(--dim)}
-.prov tbody th{font-weight:650;width:9.5em}
-.prov tr:last-child th,.prov tr:last-child td{border-bottom:0}
-.src{font-size:.85rem}
-.src-url{color:var(--grape);text-decoration:none;border-bottom:1px dotted}
-.src-none,.src-inf{color:var(--dim);font-style:italic}
-.src-inf::before{content:"⚠ ";font-style:normal}
-/* facts */
-.facts{list-style:none;padding:0;margin:16px 0;display:grid;gap:9px;
-  grid-template-columns:repeat(auto-fit,minmax(158px,1fr))}
-.facts li{border:1px solid var(--line);border-radius:13px;padding:10px 13px;
-  background:var(--card)}
-.facts .k{display:block;font-size:.71rem;text-transform:uppercase;
-  letter-spacing:.08em;color:var(--dim)}
-.facts .v{font-weight:700}
-/* ISO / gaps */
-.iso{list-style:none;padding:0;margin:0}
-.iso li{border-bottom:1px dashed var(--line);padding:11px 2px;display:flex;
-  gap:12px;flex-wrap:wrap;align-items:baseline}
-.iso a{font-weight:650;text-decoration:none;border-bottom:1px solid var(--line)}
-.iso .why{color:var(--dim);font-size:.9rem}
-.iso .sc{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;
-  color:var(--dim);border:1px solid var(--line);border-radius:999px;
-  padding:1px 8px}
-footer{margin-top:66px;padding-top:20px;border-top:1px solid var(--line);
-  color:var(--dim);font-size:.85rem}
-footer p{max-width:66ch}
-.nm{display:none}
-.nm-fb{opacity:.72;border-bottom:1px dotted var(--dim)}
-html[lang=en] .nm[data-lang=en],
-html[lang=th] .nm[data-lang=th],
-html[lang=zh] .nm[data-lang=zh]{display:inline}
-[data-i18n]{display:none}
-html[lang=en] [data-i18n=en],
-html[lang=th] [data-i18n=th],
-html[lang=zh] [data-i18n=zh]{display:inline}
-.ant{position:fixed;bottom:14px;left:-40px;font-size:20px;pointer-events:none;
-  opacity:0}
+Everything here is client-side and account-free: state lives in localStorage,
+nothing is sent anywhere. Imported by build.py, which concatenates SHELF_CSS
+and SHELF_JS onto its own and renders SHELF_BODY at /shelf/.
 
+Trade cards are drawn in a browser canvas rather than by Pillow, which means
+Thai and Chinese shape correctly — the raqm limitation that caps the og:image
+cards at English does not apply here.
+"""
+
+# ---------------------------------------------------------------------------
+# UI strings, merged into build.UI
+# ---------------------------------------------------------------------------
+SHELF_UI = {
+    "shelf": {"en": "My Shelf", "th": "ชั้นของฉัน", "zh": "我的架子"},
+    "have": {"en": "Have", "th": "มีแล้ว", "zh": "已有"},
+    "seeking": {"en": "Seeking", "th": "กำลังตามหา", "zh": "想要"},
+    "doubles": {"en": "Doubles", "th": "ตัวซ้ำ", "zh": "重复款"},
+    "complete": {"en": "Complete", "th": "ครบชุด", "zh": "已集齐"},
+    "shelf_blurb": {
+        "en": ("Kept on this device only — no account, nothing sent anywhere. "
+               "Back it up if it matters to you."),
+        "th": ("เก็บไว้ในเครื่องนี้เท่านั้น ไม่ต้องสมัครสมาชิก ไม่ส่งข้อมูลไปไหน "
+               "ถ้าสำคัญกับคุณ อย่าลืมสำรองไว้"),
+        "zh": "只存在这台设备上 — 无需账号，不会上传。重要的话请备份。",
+    },
+    "shelf_empty": {
+        "en": "The shelf is waiting. Mark a figure you own and it will appear here.",
+        "th": "ชั้นยังว่างอยู่ กดว่ามีตัวไหนแล้ว เดี๋ยวมันจะมาอยู่ตรงนี้",
+        "zh": "架子还空着。标记你已有的款式，它就会出现在这里。",
+    },
+    "no_trade": {
+        "en": ("A trade card needs something to offer or something to look for. "
+               "Mark a double, or tap the heart on a figure you want."),
+        "th": ("การ์ดแลกเปลี่ยนต้องมีของให้แลก หรือของที่ตามหา "
+               "กดเพิ่มตัวซ้ำ หรือกดหัวใจตัวที่อยากได้"),
+        "zh": "交换卡需要有可换的或想找的。标记一个重复款，或点想要的爱心。",
+    },
+    "tradecard": {"en": "Make a trade card", "th": "ทำการ์ดแลกเปลี่ยน",
+                  "zh": "制作交换卡"},
+    "tradecard_hint": {
+        "en": "A picture to post where trading already happens. Yours to share.",
+        "th": "รูปสำหรับโพสต์ในกลุ่มที่เขาแลกกันอยู่แล้ว เอาไปแชร์ได้เลย",
+        "zh": "一张可以发到现成交换群里的图。随你分享。",
+    },
+    "download": {"en": "Save the card", "th": "บันทึกการ์ด", "zh": "保存卡片"},
+    "copytext": {"en": "Copy as text", "th": "คัดลอกเป็นข้อความ", "zh": "复制文字版"},
+    "copied": {"en": "Copied", "th": "คัดลอกแล้ว", "zh": "已复制"},
+    "backup": {"en": "Back up the shelf", "th": "สำรองชั้นของฉัน", "zh": "备份架子"},
+    "restore": {"en": "Restore from a backup", "th": "กู้คืนจากไฟล์สำรอง",
+                "zh": "从备份恢复"},
+    "restored": {"en": "Shelf restored", "th": "กู้คืนชั้นเรียบร้อย", "zh": "架子已恢复"},
+    "restore_bad": {"en": "That file was not a Poplucky backup",
+                    "th": "ไฟล์นี้ไม่ใช่ไฟล์สำรองของ Poplucky",
+                    "zh": "这不是 Poplucky 的备份文件"},
+    "clear": {"en": "Clear the shelf", "th": "ล้างชั้น", "zh": "清空架子"},
+    "clear_sure": {
+        "en": "Clear the whole shelf? Back it up first if you might want it.",
+        "th": "ล้างทั้งชั้นเลยไหม ถ้าอาจจะอยากได้คืน สำรองไว้ก่อนนะ",
+        "zh": "要清空整个架子吗？可能还想要的话，先备份。",
+    },
+    "on_shelf": {"en": "On your shelf", "th": "อยู่บนชั้นแล้ว", "zh": "已在架上"},
+    "across": {"en": "across", "th": "จาก", "zh": "分布于"},
+    "sets": {"en": "sets", "th": "ชุด", "zh": "套"},
+    "figures_word": {"en": "figures", "th": "ตัว", "zh": "款"},
+    "trade_have": {"en": "HAVE", "th": "มี", "zh": "有"},
+    "trade_want": {"en": "LOOKING FOR", "th": "ตามหา", "zh": "找"},
+    "and_more": {"en": "and %d more", "th": "และอีก %d", "zh": "还有 %d 款"},
+}
+
+# ---------------------------------------------------------------------------
+# CSS
+# ---------------------------------------------------------------------------
+SHELF_CSS = """
 /* --- shelf controls on a figure card ------------------------------------ */
 .card{display:flex;flex-direction:column}
 .card-link{text-decoration:none;color:inherit;display:block;position:relative;
@@ -187,7 +99,7 @@ html[lang=zh] [data-i18n=zh]{display:inline}
 .ctl button[disabled]:hover{transform:none;color:var(--dim);
   border-color:var(--line)}
 .card.owned{border-color:var(--mint)}
-.card.owned .fname::after{content:" \2713";color:var(--mint);font-weight:800}
+.card.owned .fname::after{content:" \\2713";color:var(--mint);font-weight:800}
 .shelf-item .spark{font-size:17px}
 .shelf-item.dupe .cnt{color:var(--gold)}
 /* reveal: the little pop when a figure lands on the shelf */
@@ -265,64 +177,12 @@ html[lang=zh] [data-i18n=zh]{display:inline}
   border:1px solid var(--line);box-shadow:var(--shadow);display:block}
 .said{color:var(--mint);font-size:.9rem;margin-left:4px;align-self:center}
 .hidden{display:none !important}
-</style>
-</head>
-<body>
-<div class="wrap">
-<header class="top">
-  <a class="logo" href="/"><span class="b">🎁</span> Poplucky</a>
-  <a class="shelfnav" href="/shelf/"><span data-i18n="en">My Shelf</span><span data-i18n="th">ชั้นของฉัน</span><span data-i18n="zh">我的架子</span><span class="badge"></span></a>
-  <div class="langs"><button data-l="en" aria-pressed="false">EN</button><button data-l="th" aria-pressed="false">ไทย</button><button data-l="zh" aria-pressed="false">中文</button></div>
-</header>
-<nav class="crumb"><a href="/"><span data-i18n="en">Home</span><span data-i18n="th">หน้าแรก</span><span data-i18n="zh">首页</span></a></nav>
-<main>
-<h1><span class=""><span class="nm" data-lang="en" title="">The Vigilance</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">The Vigilance</span><span class="nm nm-fb" data-lang="zh" title="no name recorded in this language">The Vigilance</span></span></h1><p class="tag"><span data-i18n="en">regular</span><span data-i18n="th">ธรรมดา</span><span data-i18n="zh">常规款</span></p><div class="shelfsolo shelf-item" data-id="sound-the-vigilance"><span class="lbl"><span data-i18n="en">Have</span><span data-i18n="th">มีแล้ว</span><span data-i18n="zh">已有</span></span><div class="ctl"><button data-act="dec" aria-label="one fewer">−</button><span class="cnt zero">0</span><button data-act="inc" aria-label="one more">+</button><button class="wish" data-act="wish" aria-pressed="false" aria-label="seeking">♡</button></div><span class="mine"><span data-i18n="en">On your shelf</span><span data-i18n="th">อยู่บนชั้นแล้ว</span><span data-i18n="zh">已在架上</span> ✓</span></div><h2><span data-i18n="en">Where it sits</span><span data-i18n="th">อยู่ตรงไหน</span><span data-i18n="zh">所属</span></h2><ul class="dir"><li><a href="/series/skullpanda-the-sound/"><span class=""><span class="nm" data-lang="en" title="">The Sound</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">The Sound</span><span class="nm" data-lang="zh" title="">声音系列</span></span></a></li><li><a href="/ip/skullpanda/"><span class=""><span class="nm" data-lang="en" title="">SKULLPANDA</span><span class="nm nm-fb" data-lang="th" title="no name recorded in this language">SKULLPANDA</span><span class="nm nm-fb" data-lang="zh" title="no name recorded in this language">SKULLPANDA</span></span></a></li></ul><section class="prov"><h2><span data-i18n="en">Where this comes from</span><span data-i18n="th">ที่มาของข้อมูล</span><span data-i18n="zh">资料来源</span></h2><table><thead><tr><th><span data-i18n="en">Field</span><span data-i18n="th">ข้อมูล</span><span data-i18n="zh">字段</span></th><th><span data-i18n="en">Value</span><span data-i18n="th">ค่า</span><span data-i18n="zh">内容</span></th><th><span data-i18n="en">Source</span><span data-i18n="th">แหล่งที่มา</span><span data-i18n="zh">来源</span></th></tr></thead><tbody><tr><th>Name (EN)</th><td>The Vigilance</td><td><a class="src src-url" href="https://thetoypool.com/pop-mart/series/skullpanda/the-sound-series/" rel="nofollow noopener" target="_blank">thetoypool.com</a></td></tr></tbody></table></section>
-</main>
-<footer><p data-i18n="en">A collector&#x27;s fan catalogue. Not affiliated with, endorsed by, or connected to POP MART. All character and series names belong to their creators and are used here to refer to the things they name.</p><p data-i18n="th">แคตตาล็อกของนักสะสม ไม่ได้มีส่วนเกี่ยวข้องหรือได้รับการรับรองจาก POP MART ชื่อตัวละครและซีรีส์ทั้งหมดเป็นของผู้สร้าง ใช้ที่นี่เพื่ออ้างถึงสิ่งที่ชื่อนั้นเรียกเท่านั้น</p><p data-i18n="zh">收藏者的同好目录。与 POP MART 无从属、认可或关联关系。所有角色与系列名称归其创作者所有，此处仅用于指称。</p></footer>
-</div>
-<script>
-(function(){
-  var K='poplucky.lang';
-  function set(l){
-    document.documentElement.lang=l;
-    try{localStorage.setItem(K,l)}catch(e){}
-    var bs=document.querySelectorAll('.langs button');
-    for(var i=0;i<bs.length;i++)
-      bs[i].setAttribute('aria-pressed', bs[i].dataset.l===l?'true':'false');
-  }
-  var saved=null; try{saved=localStorage.getItem(K)}catch(e){}
-  if(!saved){
-    var n=(navigator.language||'en').toLowerCase();
-    saved = n.indexOf('th')===0?'th' : (n.indexOf('zh')===0?'zh':'en');
-  }
-  document.addEventListener('click',function(e){
-    var b=e.target.closest('.langs button'); if(b) set(b.dataset.l);
-  });
-  set(saved);
+"""
 
-  /* hidden bell: shake a blind box and something rattles */
-  var box=document.querySelector('.logo .b');
-  if(box){
-    var taps=0,timer=null;
-    box.parentNode.addEventListener('click',function(ev){
-      ev.preventDefault();
-      taps++;
-      box.animate([{transform:'rotate(0)'},{transform:'rotate(-16deg)'},
-        {transform:'rotate(14deg)'},{transform:'rotate(0)'}],
-        {duration:340,easing:'ease-in-out'});
-      clearTimeout(timer);
-      if(taps>=3){
-        taps=0;
-        box.textContent='\u2728';
-        setTimeout(function(){box.textContent='\ud83c\udf81'},1500);
-      } else {
-        timer=setTimeout(function(){taps=0;window.location=box.parentNode.href},420);
-      }
-    });
-  }
-})();
-</script>
-<script>
+# ---------------------------------------------------------------------------
+# JS — shelf state, card controls, shelf page, trade card
+# ---------------------------------------------------------------------------
+SHELF_JS = r"""
 (function(){
   var KEY='poplucky.shelf.v1';
   var state={};
@@ -682,6 +542,59 @@ html[lang=zh] [data-i18n=zh]{display:inline}
     fr.readAsText(f);
   });
 })();
-</script>
-</body>
-</html>
+"""
+
+
+# ---------------------------------------------------------------------------
+# /shelf/ page body
+# ---------------------------------------------------------------------------
+def shelf_body(ui_span):
+    """ui_span is build.ui_span — renders all three languages, CSS picks one."""
+    def u(k):
+        return '<span data-ui="%s">%s</span>' % (k, ui_span(k))
+
+    tallies = "".join(
+        '<li><span class="big" id="%s">0</span><span class="lbl">%s</span></li>'
+        % (tid, ui_span(key))
+        for tid, key in [("t-have", "have"), ("t-uniq", "figures_word"),
+                         ("t-dup", "doubles"), ("t-want", "seeking"),
+                         ("t-sets", "sets")]
+    )
+    return (
+        '<div id="shelfpage">'
+        "<h1>%s</h1>" % ui_span("shelf")
+        + '<p class="tag">%s</p>' % ui_span("shelf_blurb")
+        + '<ul class="tallies">%s</ul>' % tallies
+        + '<p class="tag hidden" id="emptyshelf">%s</p>' % ui_span("shelf_empty")
+        + '<div id="shelfbody" class="hidden">'
+        + "<h2>%s</h2><div id=\"sets\"></div>" % ui_span("series")
+        + '<section id="dupesec" class="hidden"><h2>%s</h2>'
+          '<ul class="chips" id="dupes"></ul></section>' % ui_span("doubles")
+        + '<section id="wantsec" class="hidden"><h2>%s</h2>'
+          '<ul class="chips" id="wants"></ul></section>' % ui_span("seeking")
+        + "<h2>%s</h2>" % ui_span("tradecard")
+        + '<p class="tag hidden" id="notrade">%s</p>' % ui_span("no_trade")
+        + '<div id="tradeable" class="hidden">'
+        + '<p class="tag">%s</p>' % ui_span("tradecard_hint")
+        + '<div class="acts"><button class="primary" data-shelf="make">%s</button></div>'
+          % ui_span("tradecard")
+        + '<div id="cardwrap"></div>'
+        + '<div class="acts hidden" id="cardacts">'
+          '<button data-shelf="download">%s</button>'
+          '<button data-shelf="copy">%s</button><span class="said hidden">%s</span>'
+          "</div>" % (ui_span("download"), ui_span("copytext"), ui_span("copied"))
+        + "</div>"
+        + '<h2>&nbsp;</h2><div class="acts">'
+          '<button data-shelf="backup">%s</button>'
+          '<button data-shelf="restore">%s</button>'
+          '<button class="quiet" data-shelf="clear">%s</button>'
+          '<input type="file" id="restorefile" accept="application/json,.json" '
+          'class="hidden">'
+          "</div>" % (ui_span("backup"), ui_span("restore"), ui_span("clear"))
+        + "</div>"
+        # hidden strings the JS reads for alerts and canvas labels
+        + '<div class="hidden">%s%s%s%s%s%s</div>'
+          % (u("trade_have"), u("trade_want"), u("and_more"), u("clear_sure"),
+             u("restored"), u("restore_bad"))
+        + "</div>"
+    )
