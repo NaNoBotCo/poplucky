@@ -19,7 +19,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 VAULT = os.path.join(ROOT, "vault")
 OUT = os.path.join(ROOT, "docs")
 
-SITE = "https://poplucky.com"
+SITE = "https://poplucky.net"
 LANGS = ["en", "th", "zh"]
 LANG_LABEL = {"en": "EN", "th": "ไทย", "zh": "中文"}
 
@@ -806,7 +806,7 @@ def build():
     with open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8") as f:
         f.write("User-agent: *\nAllow: /\nSitemap: %s/sitemap.xml\n" % SITE)
     with open(os.path.join(OUT, "CNAME"), "w", encoding="utf-8") as f:
-        f.write("poplucky.com\n")
+        f.write("poplucky.net\n")
     with open(os.path.join(OUT, ".nojekyll"), "w") as f:
         f.write("")
 

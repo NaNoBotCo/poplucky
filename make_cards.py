@@ -125,7 +125,7 @@ def card(path, title, kicker="", sub="", secret=False):
     d.text((x, H - 96), "Poplucky", font=fw, fill=INK)
     fu = font(28, False)
     d.text((x + int(d.textlength("Poplucky", font=fw)) + 18, H - 92),
-           "poplucky.com", font=fu, fill=DIM)
+           "poplucky.net", font=fu, fill=DIM)
 
     os.makedirs(os.path.dirname(path), exist_ok=True)
     img.save(path, "PNG", optimize=True)

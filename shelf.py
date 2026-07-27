@@ -446,7 +446,7 @@ SHELF_JS = r"""
     g.font='800 32px '+FS; g.fillStyle=ink;
     g.fillText('Poplucky',74,H-52);
     g.font='400 27px '+FS; g.fillStyle=dim;
-    g.fillText('poplucky.com',74+g.measureText('Poplucky').width+42,H-52);
+    g.fillText('poplucky.net',74+g.measureText('Poplucky').width+42,H-52);
     return c;
   }
 
@@ -463,7 +463,7 @@ SHELF_JS = r"""
       L.push((uiText('trade_want')||'LOOKING FOR')+':');
       T.wants.forEach(function(d){ L.push('  '+nm(d.f)); });
     }
-    L.push(''); L.push('poplucky.com');
+    L.push(''); L.push('poplucky.net');
     return L.join('\n');
   }
 

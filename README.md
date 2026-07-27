@@ -3,7 +3,7 @@
 A collector's catalogue for Pop Mart blind boxes — faceted, trilingual (EN/TH/ZH),
 and honest about what it doesn't know.
 
-Live target: **poplucky.com** (domain purchased 2026-07-27, not yet deployed)
+Live target: **poplucky.net** (domain purchased 2026-07-27, not yet deployed)
 
 ## What this is
 
