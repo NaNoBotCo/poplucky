@@ -1,7 +1,7 @@
 # Poplucky
 
 A collector's catalogue for Pop Mart blind boxes — faceted, trilingual (EN/TH/ZH),
-and honest about what it doesn't know.
+and explicit about what it doesn't know.
 
 Live target: **poplucky.net** (domain purchased 2026-07-27, not yet deployed)
 
@@ -40,6 +40,9 @@ python3 -m http.server 8765 --directory docs
 | `build.py` | vault → docs. Also emits catalog.json, sitemap, CNAME. |
 | `shelf.py` | Phase 1 — shelf CSS/JS and the trade-card canvas. |
 | `art.py` | Procedural blind-box artwork, the odds wall, and their CSS. |
+| `fx.py` | Baked-rates currency converter (`/shelf/`, `/iso/`) and the ≈-price chips. |
+| `importers/make_rates.py` | Bakes daily ECB reference rates into `data/rates.json`. |
+| `data/rates.json` | The rate snapshot — kept when a refresh fails; its date is shown on-page. |
 | `make_cards.py` | og:image per page, into `docs/cards/` |
 | `seed_vault.py` | One-time initial import. Historical after seeding. |
 | `docs/` | Build output. **Wiped every build — never hand-place files here.** |
@@ -161,16 +164,11 @@ grows interactive beyond what a static build can carry.
   will not shape correctly. Thai-script cards need a shaping engine.
 - Colour vocabulary ("brown", "pink") is not translated.
 
-
 ## Licence
 
-Records, prose and pages: CC BY-SA 4.0. Code: AGPL-3.0-or-later. Anything
-carried in from elsewhere keeps its own terms — see [LICENSE](LICENSE).
+Records, prose and pages: **CC BY 4.0**. Code: **MIT**. Attribution is the only
+condition — name the work and link back, and the rest is yours: copy it, adapt
+it, sell it, index it, train on it.
 
-**Commercial licence.** If share-alike doesn't fit your use — a corpus, a
-product, a model — a commercial licence is available.
-[Open an issue](https://github.com/NaNoBotCo/poplucky/issues) and say what you need.
-
----
-
-Contact: Nan · nan@motdang.net · Sponsor: [Ko-fi](https://ko-fi.com/defiantchiangmai) · [Patreon](https://www.patreon.com/nanobotco)
+Anything carried in from elsewhere keeps its own terms, named beside it — see
+[LICENSE](LICENSE) and [NOTICE.txt](NOTICE.txt).

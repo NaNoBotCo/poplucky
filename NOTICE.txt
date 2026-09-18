@@ -1,0 +1,48 @@
+Poplucky — licences, in layers
+
+Different parts of this repository come from different places and cannot carry
+one licence between them. The layers are deliberate.
+
+The verbatim text of the licence named first is in LICENSE beside this file.
+
+
+RECORDS, PROSE AND PAGES
+  Creative Commons Attribution 4.0 International (CC BY 4.0)
+  SPDX-License-Identifier: CC-BY-4.0
+  https://creativecommons.org/licenses/by/4.0/
+
+  Covers the vault notes, the taxonomy — character × series × variant × form ×
+  edition scope — the per-field provenance, the gap pages and the share cards
+  drawn for this project.
+
+  Attribute to: Poplucky · https://poplucky.net/
+
+  Attribution is the whole of the condition — copy it, adapt it, sell it, index
+  it, train on it, and say where it came from. The licence covers sui generis
+  database rights where they exist (section 4).
+
+
+CODE
+  MIT
+  SPDX-License-Identifier: MIT
+  Copyright (c) 2026 NaN
+  Keep the copyright line and the permission notice; everything else is open.
+
+
+WHAT CARRIES ITS OWN TERMS
+
+  Exchange rates — data/rates.json
+      European Central Bank reference rates, fetched through frankfurter.app.
+      The figures are the ECB's, quoted with the publication date they carry,
+      and are not relicensed here.
+
+  Names and marks
+      Pop Mart, Labubu, MOLLY, SKULLPANDA, CRYBABY and the series names are
+      their owners' trademarks. Naming a figure in a catalogue is description,
+      not a claim on the mark, and this project is not affiliated with or
+      endorsed by any of them.
+
+  Where an upstream licence and the layers above disagree, the upstream licence
+  governs that file.
+
+Copyright (c) 2026 NaN
