@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it as below."
+title: "Poplucky"
+abstract: "Poplucky — a collector's catalogue for Pop Mart blind boxes. Faceted, trilingual (EN/TH/ZH), and open about what it doesn't know."
+type: software
+authors:
+  - name: "NaN"
+    website: "https://github.com/NaNoBotCo"
+repository-code: "https://github.com/NaNoBotCo/poplucky"
+url: "https://nanobotco.github.io/poplucky/"
+license:
+  - CC-BY-SA-4.0
+  - AGPL-3.0-or-later
+date-released: "2026-09-18"
