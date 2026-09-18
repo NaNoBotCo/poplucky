@@ -160,3 +160,13 @@ grows interactive beyond what a static build can carry.
 - Share cards render the English name only — this Pillow has no raqm, so Thai
   will not shape correctly. Thai-script cards need a shaping engine.
 - Colour vocabulary ("brown", "pink") is not translated.
+
+
+## Licence
+
+Records, prose and pages: CC BY-SA 4.0. Code: AGPL-3.0-or-later. Anything
+carried in from elsewhere keeps its own terms — see [LICENSE](LICENSE).
+
+**Commercial licence.** If share-alike doesn't fit your use — a corpus, a
+product, a model — a commercial licence is available.
+[Open an issue](https://github.com/NaNoBotCo/poplucky/issues) and say what you need.
