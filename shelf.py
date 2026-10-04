@@ -21,11 +21,9 @@ SHELF_UI = {
     "doubles": {"en": "Doubles", "th": "ตัวซ้ำ", "zh": "重复款"},
     "complete": {"en": "Complete", "th": "ครบชุด", "zh": "已集齐"},
     "shelf_blurb": {
-        "en": ("Kept on this device only — no account, nothing sent anywhere. "
-               "Back it up if it matters to you."),
-        "th": ("เก็บไว้ในเครื่องนี้เท่านั้น ไม่ต้องสมัครสมาชิก ไม่ส่งข้อมูลไปไหน "
-               "ถ้าสำคัญกับคุณ อย่าลืมสำรองไว้"),
-        "zh": "只存在这台设备上 — 无需账号，不会上传。重要的话请备份。",
+        "en": "Kept in this browser, on this device.",
+        "th": "เก็บไว้ในเบราว์เซอร์ของเครื่องนี้",
+        "zh": "保存在这台设备的浏览器里。",
     },
     "shelf_empty": {
         "en": "The shelf is waiting. Mark a figure you own and it will appear here.",
