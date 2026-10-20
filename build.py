@@ -605,12 +605,16 @@ def page(title, lang_neutral_title, body, desc, path, crumbs=None, extra_head=""
     """path is the site path like '/series/foo/'."""
     canon = SITE + path
     if card:
+        alt = html.escape("Card: %s" % (lang_neutral_title if "Poplucky" in lang_neutral_title
+                                         else lang_neutral_title + ", Poplucky"), quote=True)
         extra_head += (
             '\n<meta property="og:image" content="%s/cards/%s">'
             '\n<meta property="og:image:width" content="1200">'
             '\n<meta property="og:image:height" content="630">'
+            '\n<meta property="og:image:alt" content="%s">'
             '\n<meta name="twitter:image" content="%s/cards/%s">'
-            % (SITE, card, SITE, card)
+            '\n<meta name="twitter:image:alt" content="%s">'
+            % (SITE, card, alt, SITE, card, alt)
         )
     crumb_html = ""
     if crumbs:
